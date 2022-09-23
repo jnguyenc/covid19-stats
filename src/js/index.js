@@ -1,9 +1,10 @@
 import '../styles/main.scss';
+// import { CleanPlugin } from 'webpack';
 import fetchData from './fetchData';
 import { mergeData } from './dataProcess';
 import dataUrls from './dataUrls';
 import dataColumns from './dataColumns';
-import { generateTable, writeTable } from './htmlGenerators';
+import { writeTable } from './htmlRenders';
 
 fetchData(dataUrls).then((allJson) => {
   const { RRC } = allJson[0];
@@ -22,15 +23,22 @@ fetchData(dataUrls).then((allJson) => {
 
   writeTable(mergedData, dataColumns, '#area1');
 
-  // document.querySelector('#area2').innerHTML = generateTable(mergedData, { code: 'Code', city: 'City', zipCode: 'Zip Code' });
-
   let cols = { nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code' };
-  writeTable(mergedData, cols);
+  const target = writeTable(mergedData, cols);
+  const col = target.querySelector('col.zipCode');
+  col.classList.replace('active', 'inactive');
+
+  const option = target.querySelector('input[name="zipCode"]');
+  console.log(option.checked);
+  option.checked = !option.checked;
+  console.log(option.checked);
 
   cols = {
     code: 'Code', nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code',
   };
   writeTable(mergedData, cols, '#area4');
+
+  console.log(RRC, facls, rrcData, privateData, rrcTesting);
 
   // End of .then
 }).catch((err) => {

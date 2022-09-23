@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = (env, argv) => {
   let mode = 'development';
@@ -18,6 +19,7 @@ module.exports = (env, argv) => {
         title: 'Custom template',
         template: path.resolve(__dirname, './src/index.html'),
       }),
+      new WebpackManifestPlugin(),
     ],
     module: {
       rules: [

@@ -1,6 +1,6 @@
 import { capitalizeAll, randomString } from './utilities';
 
-function generateOptions(columns) {
+function renderOptions(columns) {
   let options = '<legend>Show/hide colunms:</legend>';
   let option = '';
 
@@ -15,20 +15,28 @@ function generateOptions(columns) {
   return options;
 }
 
-function generateTableHead(columns) {
+function renderTableCols(columns) {
+  let cols = '';
+
+  const columnsKeys = Object.keys(columns);
+  columnsKeys.forEach((key) => { cols += `<col class="${key} active" />`; });
+
+  cols = `<colgroup>${cols}</colgroup>`;
+  return cols;
+}
+
+function renderTableHead(columns) {
   let head = '';
   let row = '';
 
   const columnsName = Object.values(columns);
-  columnsName.forEach((name) => {
-    row += `<th>${name}</th>`;
-  });
+  columnsName.forEach((name) => { row += `<th>${name}</th>`; });
 
   head = `<thead><tr>${row}</tr></thead>`;
   return head;
 }
 
-function generateTableBody(data, columns) {
+function renderTableBody(data, columns) {
   let row = '';
   let rows = '';
   let body = '';
@@ -54,11 +62,12 @@ function generateTableBody(data, columns) {
   return body;
 }
 
-function generateTable(data, columns) {
-  const options = generateOptions(columns);
-  const head = generateTableHead(columns);
-  const body = generateTableBody(data, columns);
-  const table = `<table class="table table-sm table-striped">${head}${body}</table>`;
+function renderTable(data, columns) {
+  const options = renderOptions(columns);
+  const cols = renderTableCols(columns);
+  const head = renderTableHead(columns);
+  const body = renderTableBody(data, columns);
+  const table = `<table class="table table-sm table-striped">${cols}${head}${body}</table>`;
 
   return options + table;
 }
@@ -77,8 +86,8 @@ function writeTable(data, columns, domTarget = '#noID') {
     }
   }
 
-  target.innerHTML = generateTable(data, columns);
+  target.innerHTML = renderTable(data, columns);
   return target;
 }
 
-export { generateTable, writeTable };
+export { renderTable, writeTable };

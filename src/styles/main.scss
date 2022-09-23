@@ -11,6 +11,11 @@ p {
 }
 
 table {
+  colgroup {
+    col.inactive {
+      visibility: collapse;
+    }
+  }
   tbody {
     tr:nth-child(even) {
       _background-color: $color-background;
