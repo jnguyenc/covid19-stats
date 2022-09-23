@@ -1,0 +1,29 @@
+$color-primary: #333;
+$color-secondary: rgb(46, 6, 110);
+$color-background: #ccc;
+
+body {
+  color: $color-primary;
+}
+
+p {
+  color: $color-secondary;
+}
+
+table {
+  tbody {
+    tr:nth-child(even) {
+      _background-color: $color-background;
+    }
+  }
+}
+
+fieldset {
+  div {
+    margin-left: 1em;
+
+    label {
+      margin-left: 1em;
+    }
+  }
+}
