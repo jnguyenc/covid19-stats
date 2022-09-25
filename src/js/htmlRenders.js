@@ -1,4 +1,5 @@
 import { capitalizeAll, randomString } from './utilities';
+import addEventListeners from './events';
 
 function renderOptions(columns) {
   let options = '<legend>Show/hide colunms:</legend>';
@@ -29,10 +30,14 @@ function renderTableHead(columns) {
   let head = '';
   let row = '';
 
-  const columnsName = Object.values(columns);
-  columnsName.forEach((name) => { row += `<th>${name}</th>`; });
+  // const columnsName = Object.values(columns);
+  // columnsName.forEach((name) => {  });
+  const columnsKeys = Object.keys(columns);
+  columnsKeys.forEach((key) => {
+    row += `<th class="${key}">${columns[key]}</th>`;
+  });
 
-  head = `<thead><tr>${row}</tr></thead>`;
+  head = `<thead class="thead-dark"><tr>${row}</tr></thead>`;
   return head;
 }
 
@@ -76,6 +81,7 @@ function writeTable(data, columns, domTarget = '#noID') {
   let target = document.querySelector(domTarget);
   if (target === null) {
     target = document.createElement('div');
+    target.classList.add('dataholder');
     const domBody = document.getElementsByTagName('body')[0];
     domBody.append(target);
 
@@ -87,6 +93,8 @@ function writeTable(data, columns, domTarget = '#noID') {
   }
 
   target.innerHTML = renderTable(data, columns);
+  addEventListeners(target);
+
   return target;
 }
 

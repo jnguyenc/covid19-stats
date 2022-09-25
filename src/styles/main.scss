@@ -16,9 +16,18 @@ table {
       visibility: collapse;
     }
   }
+  thead {
+    position: sticky !important;
+    top: 0px;
+    background-color: $color-background;
+  }
+ 
   tbody {
     tr:nth-child(even) {
       _background-color: $color-background;
+    }
+    tr:hover{
+      border-bottom: 1px solid $color-primary;
     }
   }
 }

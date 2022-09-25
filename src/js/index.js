@@ -23,15 +23,14 @@ fetchData(dataUrls).then((allJson) => {
 
   writeTable(mergedData, dataColumns, '#area1');
 
-  let cols = { nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code' };
-  const target = writeTable(mergedData, cols);
-  const col = target.querySelector('col.zipCode');
-  col.classList.replace('active', 'inactive');
+  // col.classList.replace('active', 'inactive');
+  // const option = target.querySelector('input[name="zipCode"]');
+  // console.log(option.checked);
+  // option.checked = !option.checked;
+  // console.log(option.checked);
 
-  const option = target.querySelector('input[name="zipCode"]');
-  console.log(option.checked);
-  option.checked = !option.checked;
-  console.log(option.checked);
+  let cols = { nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code' };
+  writeTable(mergedData, cols);
 
   cols = {
     code: 'Code', nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code',
