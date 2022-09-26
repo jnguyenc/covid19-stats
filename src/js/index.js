@@ -1,8 +1,7 @@
 import '../styles/main.scss';
-// import { CleanPlugin } from 'webpack';
 import fetchData from './fetchData';
-import { mergeData } from './dataProcess';
 import dataUrls from './dataUrls';
+import { mergeData } from './dataProcess';
 import dataColumns from './dataColumns';
 import { writeTable } from './htmlRenders';
 
@@ -22,12 +21,6 @@ fetchData(dataUrls).then((allJson) => {
   mergedData = mergeData(mergedData, 'code', bopData, 'id');
 
   writeTable(mergedData, dataColumns, '#area1');
-
-  // col.classList.replace('active', 'inactive');
-  // const option = target.querySelector('input[name="zipCode"]');
-  // console.log(option.checked);
-  // option.checked = !option.checked;
-  // console.log(option.checked);
 
   let cols = { nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code' };
   writeTable(mergedData, cols);

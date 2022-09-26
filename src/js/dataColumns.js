@@ -1,5 +1,5 @@
 // Select columns to display and provide human readable names for the columns
-const dataColumns1 = {
+const dataColumns = {
   code: 'Facility Code',
   nameDisplay: 'Facility Name',
   city: 'City',
@@ -17,15 +17,6 @@ const dataColumns1 = {
   inmatePositiveAmt: 'Immate Positive',
   inmateDeathAmt: 'Immate Death',
   inmateRecoveries: 'Immate Recoveries',
-};
-
-const dataColumns = {
-  code: 'Facility Code',
-  nameDisplay: 'Facility Name',
-  city: 'City',
-  state: 'State',
-  zipCode: 'Zip Code',
-
 };
 
 export default dataColumns;

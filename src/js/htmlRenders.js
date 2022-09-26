@@ -1,14 +1,14 @@
 import { capitalizeAll, randomString } from './utilities';
 import addEventListeners from './events';
 
-function renderOptions(columns) {
+function renderOptions(columns, targetId) {
   let options = '<legend>Show/hide colunms:</legend>';
   let option = '';
 
   const keys = Object.keys(columns);
   keys.forEach((key) => {
-    option = `<input type="checkbox" id="${key}" name="${key}" class="option" checked/>`
-            + `<label for="${key}">${(columns[key])}</label>`;
+    option = `<input type="checkbox" id="${key}_${targetId}" name="${key}" data-key="${key}" checked/>`
+            + `<label for="${key}_${targetId}">${(columns[key])}</label>`;
     options += `<div>${option}</div>`;
   });
 
@@ -20,7 +20,7 @@ function renderTableCols(columns) {
   let cols = '';
 
   const columnsKeys = Object.keys(columns);
-  columnsKeys.forEach((key) => { cols += `<col class="${key} active" />`; });
+  columnsKeys.forEach((key) => { cols += `<col data-key="${key}" class="active" />`; });
 
   cols = `<colgroup>${cols}</colgroup>`;
   return cols;
@@ -34,7 +34,7 @@ function renderTableHead(columns) {
   // columnsName.forEach((name) => {  });
   const columnsKeys = Object.keys(columns);
   columnsKeys.forEach((key) => {
-    row += `<th class="${key}">${columns[key]}</th>`;
+    row += `<th data-key="${key}">${columns[key]}</th>`;
   });
 
   head = `<thead class="thead-dark"><tr>${row}</tr></thead>`;
@@ -51,13 +51,13 @@ function renderTableBody(data, columns) {
     row = '';
     columnsKeys.forEach((key) => {
       let value = element[key];
-      if (value === undefined) {
+      if (value === undefined || value === null) {
         value = '...';
       }
       if (key === 'city') {
         value = capitalizeAll(value);
       }
-      row += `<td>${value}</td>`;
+      row += `<td data-key="${key}">${value}</td>`;
     });
 
     rows += `<tr>${row}</tr>`;
@@ -67,8 +67,8 @@ function renderTableBody(data, columns) {
   return body;
 }
 
-function renderTable(data, columns) {
-  const options = renderOptions(columns);
+function renderTable(data, columns, targetId) {
+  const options = renderOptions(columns, targetId);
   const cols = renderTableCols(columns);
   const head = renderTableHead(columns);
   const body = renderTableBody(data, columns);
@@ -92,7 +92,7 @@ function writeTable(data, columns, domTarget = '#noID') {
     }
   }
 
-  target.innerHTML = renderTable(data, columns);
+  target.innerHTML = renderTable(data, columns, target.id);
   addEventListeners(target);
 
   return target;
