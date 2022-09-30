@@ -14,23 +14,21 @@ fetchData(dataUrls).then((allJson) => {
   const { bopVaccine } = allJson[5];
   const { OpsLevel } = allJson[6];
 
-  let mergedData = [];
-  mergedData = mergeData(Locations, 'code', OpsLevel, 'faclCode');
-  mergedData = mergeData(mergedData, 'code', bopVaccine, 'facility');
-  mergedData = mergeData(mergedData, 'code', bopTesting, 'facilityCode');
-  mergedData = mergeData(mergedData, 'code', bopData, 'id');
+  let data = [];
 
-  writeTable(mergedData, dataColumns, '#area1');
+  data = mergeData(bopData, 'id', Locations, 'code');
+  data = mergeData(data, 'code', OpsLevel, 'faclCode');
+  data = mergeData(data, 'code', bopVaccine, 'facility');
+  data = mergeData(data, 'code', bopTesting, 'facilityCode');
+  writeTable(data, dataColumns, '#area1');
 
-  let cols = { nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code' };
-  writeTable(mergedData, cols);
+  data = mergeData(rrcData, 'contractNum', RRC, 'contractNum');
+  data = mergeData(data, 'contractNum', facls, 'contractNum');
+  data = mergeData(data, 'id', rrcTesting, 'facilityName');
+  data = mergeData(data, 'facilityCode', OpsLevel, 'faclCode');
+  writeTable(data, dataColumns);
 
-  cols = {
-    code: 'Code', nameDisplay: 'Facility', city: 'City', zipCode: 'Zip Code',
-  };
-  writeTable(mergedData, cols, '#area4');
-
-  console.log(RRC, facls, rrcData, privateData, rrcTesting);
+  console.log(privateData);
 
   // End of .then
 }).catch((err) => {

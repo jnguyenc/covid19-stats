@@ -2,68 +2,66 @@ $color-primary: #333;
 $color-secondary: rgb(21, 92, 207);
 $color-background: #ccc;
 
-body {
-  color: $color-primary;
-}
-
-p {
-  color: $color-secondary;
+:root{
+  font-size: 16px;
 }
 
 table {
   width: 100%;
   colgroup {
-    col.inactive {
-      visibility: collapse;
+    col {
+      &.inactive,
+      &.hide {
+        visibility: collapse;
+      }
     }
   }
   thead {
-    position: sticky !important;
+    position: sticky;
     top: 0px;
     background-color: $color-background;
     tr {
       th {
-        cursor:pointer;
-        font-size: small;
-        position: relative;
         text-align: left;
         min-width: 100px;
-        height: 3em;
         overflow: hidden;
         white-space: nowrap;
         border-right: 1px solid #eee;
-        &:hover {
-          text-decoration: underline;
-          color: $color-secondary;
+        cursor: pointer;
+        & > * {
+          cursor: pointer;
         }
-        &[data-sort-direction="desc"],
-        &[data-sort-direction="asc"] {
-          &::after {
-            font-size: 2.5em;
+        span {
+          margin: 0 0.25em;
+          font-size:.75rem;
+          &:hover {
+            text-decoration: underline;
             color: $color-secondary;
-            position: absolute;
-            top: -30%;
-            left: 0em;
-            z-index: -1;
-            translate: 0 4px;
           }
         }
-        &[data-sort-direction="desc"]::after {
-          content: "\a71b";
+        i.bi {
+          font-size: 1rem;
+          border: 2px solid $color-background;
+          border-radius: 6px;
+          padding: 0.125em;
+          &:hover {
+            color: $color-secondary;
+            border-color: $color-secondary;
+          }
         }
-        &[data-sort-direction="asc"]::after {
-          content: "\a71c";
+        i:first-child{
+          /* working on this */
+          display: none;
         }
       }
     }
   }
-
   tbody {
     tr:nth-child(even) {
       _background-color: $color-background;
     }
     tr:hover {
-      border-bottom: 1px solid $color-primary;
+      _border-bottom: 1px solid $color-primary;
     }
   }
 }
@@ -73,6 +71,53 @@ fieldset {
     margin-left: 1em;
     label {
       margin-left: 1em;
+    }
+  }
+}
+
+.showColumns {
+  position: sticky;
+  min-height: 36px;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  
+  div {
+    border: 1px solid $color-background;
+    border-radius: 6px;
+    padding: 0.125em 0.25em;
+
+    &.active,
+    &.show {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      margin: 0.125em 0.25em;
+      transition: margin-left 0.25s;
+    }
+
+    &.inactive,
+    &.hide {
+      position: absolute;
+      display: inline-block;
+      visibility: hidden;
+      top: 50 vh;
+      left: 50 vw;
+      margin-left: 80vw;
+      _display: none;
+    }
+
+    span {
+      margin-left: 0.5em;
+      font-size:.75rem;
+      font-weight: bold;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border-color: $color-secondary;
+      color: $color-secondary;
     }
   }
 }
