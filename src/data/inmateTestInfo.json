@@ -1,0 +1,1670 @@
+{
+  "bopTesting": [
+    {
+      "facilityCode": "ALD",
+      "completedTest": 642,
+      "pendTest": 0,
+      "posTest": 341
+    },
+    {
+      "facilityCode": "ALF",
+      "completedTest": 912,
+      "pendTest": 0,
+      "posTest": 443
+    },
+    {
+      "facilityCode": "ALI",
+      "completedTest": 1292,
+      "pendTest": 0,
+      "posTest": 351
+    },
+    {
+      "facilityCode": "ALM",
+      "completedTest": 1145,
+      "pendTest": 0,
+      "posTest": 589
+    },
+    {
+      "facilityCode": "ALP",
+      "completedTest": 626,
+      "pendTest": 0,
+      "posTest": 323
+    },
+    {
+      "facilityCode": "ASH",
+      "completedTest": 1125,
+      "pendTest": 0,
+      "posTest": 430
+    },
+    {
+      "facilityCode": "ATL",
+      "completedTest": 762,
+      "pendTest": 0,
+      "posTest": 240
+    },
+    {
+      "facilityCode": "ATW",
+      "completedTest": 993,
+      "pendTest": 0,
+      "posTest": 462
+    },
+    {
+      "facilityCode": "BAS",
+      "completedTest": 994,
+      "pendTest": 0,
+      "posTest": 431
+    },
+    {
+      "facilityCode": "BEC",
+      "completedTest": 1170,
+      "pendTest": 0,
+      "posTest": 250
+    },
+    {
+      "facilityCode": "BEN",
+      "completedTest": 1285,
+      "pendTest": 1,
+      "posTest": 256
+    },
+    {
+      "facilityCode": "BER",
+      "completedTest": 744,
+      "pendTest": 0,
+      "posTest": 489
+    },
+    {
+      "facilityCode": "BIG",
+      "completedTest": 1064,
+      "pendTest": 0,
+      "posTest": 549
+    },
+    {
+      "facilityCode": "BML",
+      "completedTest": 1659,
+      "pendTest": 0,
+      "posTest": 716
+    },
+    {
+      "facilityCode": "BMM",
+      "completedTest": 1221,
+      "pendTest": 0,
+      "posTest": 382
+    },
+    {
+      "facilityCode": "BMP",
+      "completedTest": 1287,
+      "pendTest": 0,
+      "posTest": 369
+    },
+    {
+      "facilityCode": "BRO",
+      "completedTest": 1661,
+      "pendTest": 0,
+      "posTest": 691
+    },
+    {
+      "facilityCode": "BRY",
+      "completedTest": 484,
+      "pendTest": 0,
+      "posTest": 256
+    },
+    {
+      "facilityCode": "BSY",
+      "completedTest": 1154,
+      "pendTest": 0,
+      "posTest": 360
+    },
+    {
+      "facilityCode": "BTF",
+      "completedTest": 1159,
+      "pendTest": 1,
+      "posTest": 401
+    },
+    {
+      "facilityCode": "BUF",
+      "completedTest": 736,
+      "pendTest": 0,
+      "posTest": 267
+    },
+    {
+      "facilityCode": "BUH",
+      "completedTest": 706,
+      "pendTest": 0,
+      "posTest": 262
+    },
+    {
+      "facilityCode": "BUT",
+      "completedTest": 626,
+      "pendTest": 1,
+      "posTest": 243
+    },
+    {
+      "facilityCode": "CAA",
+      "completedTest": 1157,
+      "pendTest": 0,
+      "posTest": 434
+    },
+    {
+      "facilityCode": "CCC",
+      "completedTest": 576,
+      "pendTest": 3,
+      "posTest": 293
+    },
+    {
+      "facilityCode": "CLP",
+      "completedTest": 975,
+      "pendTest": 0,
+      "posTest": 374
+    },
+    {
+      "facilityCode": "COL",
+      "completedTest": 1934,
+      "pendTest": 0,
+      "posTest": 671
+    },
+    {
+      "facilityCode": "COM",
+      "completedTest": 1502,
+      "pendTest": 0,
+      "posTest": 376
+    },
+    {
+      "facilityCode": "COP",
+      "completedTest": 1149,
+      "pendTest": 0,
+      "posTest": 218
+    },
+    {
+      "facilityCode": "CRW",
+      "completedTest": 1243,
+      "pendTest": 0,
+      "posTest": 897
+    },
+    {
+      "facilityCode": "CUM",
+      "completedTest": 1203,
+      "pendTest": 0,
+      "posTest": 416
+    },
+    {
+      "facilityCode": "DAN",
+      "completedTest": 1034,
+      "pendTest": 0,
+      "posTest": 417
+    },
+    {
+      "facilityCode": "DEV",
+      "completedTest": 796,
+      "pendTest": 1,
+      "posTest": 434
+    },
+    {
+      "facilityCode": "DTH",
+      "completedTest": 283,
+      "pendTest": 1,
+      "posTest": 146
+    },
+    {
+      "facilityCode": "DUB",
+      "completedTest": 733,
+      "pendTest": 0,
+      "posTest": 273
+    },
+    {
+      "facilityCode": "EDG",
+      "completedTest": 1741,
+      "pendTest": 0,
+      "posTest": 374
+    },
+    {
+      "facilityCode": "ELK",
+      "completedTest": 1596,
+      "pendTest": 0,
+      "posTest": 531
+    },
+    {
+      "facilityCode": "ENG",
+      "completedTest": 1018,
+      "pendTest": 0,
+      "posTest": 574
+    },
+    {
+      "facilityCode": "ERE",
+      "completedTest": 1020,
+      "pendTest": 0,
+      "posTest": 570
+    },
+    {
+      "facilityCode": "EST",
+      "completedTest": 69,
+      "pendTest": 0,
+      "posTest": 25
+    },
+    {
+      "facilityCode": "FAI",
+      "completedTest": 867,
+      "pendTest": 0,
+      "posTest": 312
+    },
+    {
+      "facilityCode": "FLF",
+      "completedTest": 1312,
+      "pendTest": 1,
+      "posTest": 710
+    },
+    {
+      "facilityCode": "FLM",
+      "completedTest": 293,
+      "pendTest": 0,
+      "posTest": 84
+    },
+    {
+      "facilityCode": "FLP",
+      "completedTest": 726,
+      "pendTest": 0,
+      "posTest": 324
+    },
+    {
+      "facilityCode": "FOM",
+      "completedTest": 1471,
+      "pendTest": 0,
+      "posTest": 385
+    },
+    {
+      "facilityCode": "FOR",
+      "completedTest": 1572,
+      "pendTest": 0,
+      "posTest": 554
+    },
+    {
+      "facilityCode": "FTD",
+      "completedTest": 3291,
+      "pendTest": 0,
+      "posTest": 1748
+    },
+    {
+      "facilityCode": "FTW",
+      "completedTest": 1329,
+      "pendTest": 0,
+      "posTest": 576
+    },
+    {
+      "facilityCode": "GIL",
+      "completedTest": 1288,
+      "pendTest": 0,
+      "posTest": 386
+    },
+    {
+      "facilityCode": "GRE",
+      "completedTest": 1157,
+      "pendTest": 0,
+      "posTest": 732
+    },
+    {
+      "facilityCode": "GUA",
+      "completedTest": 1311,
+      "pendTest": 2,
+      "posTest": 330
+    },
+    {
+      "facilityCode": "HAF",
+      "completedTest": 1624,
+      "pendTest": 1,
+      "posTest": 283
+    },
+    {
+      "facilityCode": "HAZ",
+      "completedTest": 1009,
+      "pendTest": 2,
+      "posTest": 192
+    },
+    {
+      "facilityCode": "HER",
+      "completedTest": 1365,
+      "pendTest": 0,
+      "posTest": 622
+    },
+    {
+      "facilityCode": "HON",
+      "completedTest": 342,
+      "pendTest": 0,
+      "posTest": 195
+    },
+    {
+      "facilityCode": "HOU",
+      "completedTest": 750,
+      "pendTest": 0,
+      "posTest": 228
+    },
+    {
+      "facilityCode": "JES",
+      "completedTest": 1239,
+      "pendTest": 0,
+      "posTest": 460
+    },
+    {
+      "facilityCode": "LAT",
+      "completedTest": 959,
+      "pendTest": 0,
+      "posTest": 652
+    },
+    {
+      "facilityCode": "LEE",
+      "completedTest": 1256,
+      "pendTest": 0,
+      "posTest": 496
+    },
+    {
+      "facilityCode": "LEW",
+      "completedTest": 857,
+      "pendTest": 0,
+      "posTest": 351
+    },
+    {
+      "facilityCode": "LEX",
+      "completedTest": 1202,
+      "pendTest": 1,
+      "posTest": 642
+    },
+    {
+      "facilityCode": "LOF",
+      "completedTest": 967,
+      "pendTest": 0,
+      "posTest": 505
+    },
+    {
+      "facilityCode": "LOM",
+      "completedTest": 1722,
+      "pendTest": 0,
+      "posTest": 486
+    },
+    {
+      "facilityCode": "LOR",
+      "completedTest": 773,
+      "pendTest": 0,
+      "posTest": 641
+    },
+    {
+      "facilityCode": "LOS",
+      "completedTest": 683,
+      "pendTest": 4,
+      "posTest": 424
+    },
+    {
+      "facilityCode": "LVN",
+      "completedTest": 1459,
+      "pendTest": 0,
+      "posTest": 484
+    },
+    {
+      "facilityCode": "MAN",
+      "completedTest": 1003,
+      "pendTest": 0,
+      "posTest": 448
+    },
+    {
+      "facilityCode": "MAR",
+      "completedTest": 1378,
+      "pendTest": 0,
+      "posTest": 769
+    },
+    {
+      "facilityCode": "MCD",
+      "completedTest": 1320,
+      "pendTest": 4,
+      "posTest": 412
+    },
+    {
+      "facilityCode": "MCK",
+      "completedTest": 1034,
+      "pendTest": 0,
+      "posTest": 426
+    },
+    {
+      "facilityCode": "MCR",
+      "completedTest": 1348,
+      "pendTest": 0,
+      "posTest": 336
+    },
+    {
+      "facilityCode": "MEM",
+      "completedTest": 1115,
+      "pendTest": 0,
+      "posTest": 321
+    },
+    {
+      "facilityCode": "MEN",
+      "completedTest": 1093,
+      "pendTest": 0,
+      "posTest": 250
+    },
+    {
+      "facilityCode": "MIA",
+      "completedTest": 912,
+      "pendTest": 1,
+      "posTest": 278
+    },
+    {
+      "facilityCode": "MIL",
+      "completedTest": 1253,
+      "pendTest": 0,
+      "posTest": 348
+    },
+    {
+      "facilityCode": "MIM",
+      "completedTest": 1367,
+      "pendTest": 18,
+      "posTest": 168
+    },
+    {
+      "facilityCode": "MNA",
+      "completedTest": 1112,
+      "pendTest": 0,
+      "posTest": 640
+    },
+    {
+      "facilityCode": "MON",
+      "completedTest": 330,
+      "pendTest": 0,
+      "posTest": 103
+    },
+    {
+      "facilityCode": "MRG",
+      "completedTest": 435,
+      "pendTest": 0,
+      "posTest": 317
+    },
+    {
+      "facilityCode": "OAD",
+      "completedTest": 1059,
+      "pendTest": 0,
+      "posTest": 762
+    },
+    {
+      "facilityCode": "OAK",
+      "completedTest": 890,
+      "pendTest": 0,
+      "posTest": 692
+    },
+    {
+      "facilityCode": "OKL",
+      "completedTest": 1357,
+      "pendTest": 0,
+      "posTest": 612
+    },
+    {
+      "facilityCode": "OTV",
+      "completedTest": 578,
+      "pendTest": 0,
+      "posTest": 366
+    },
+    {
+      "facilityCode": "OXF",
+      "completedTest": 1062,
+      "pendTest": 0,
+      "posTest": 673
+    },
+    {
+      "facilityCode": "PEK",
+      "completedTest": 1180,
+      "pendTest": 0,
+      "posTest": 800
+    },
+    {
+      "facilityCode": "PEM",
+      "completedTest": 1191,
+      "pendTest": 0,
+      "posTest": 328
+    },
+    {
+      "facilityCode": "PEN",
+      "completedTest": 258,
+      "pendTest": 0,
+      "posTest": 71
+    },
+    {
+      "facilityCode": "PET",
+      "completedTest": 650,
+      "pendTest": 0,
+      "posTest": 200
+    },
+    {
+      "facilityCode": "PHL",
+      "completedTest": 797,
+      "pendTest": 0,
+      "posTest": 407
+    },
+    {
+      "facilityCode": "PHX",
+      "completedTest": 1127,
+      "pendTest": 2,
+      "posTest": 519
+    },
+    {
+      "facilityCode": "POL",
+      "completedTest": 1231,
+      "pendTest": 0,
+      "posTest": 574
+    },
+    {
+      "facilityCode": "POM",
+      "completedTest": 1518,
+      "pendTest": 0,
+      "posTest": 752
+    },
+    {
+      "facilityCode": "RBK",
+      "completedTest": 846,
+      "pendTest": 0,
+      "posTest": 265
+    },
+    {
+      "facilityCode": "RCH",
+      "completedTest": 558,
+      "pendTest": 0,
+      "posTest": 370
+    },
+    {
+      "facilityCode": "SAF",
+      "completedTest": 771,
+      "pendTest": 0,
+      "posTest": 499
+    },
+    {
+      "facilityCode": "SCH",
+      "completedTest": 1069,
+      "pendTest": 0,
+      "posTest": 534
+    },
+    {
+      "facilityCode": "SDC",
+      "completedTest": 909,
+      "pendTest": 0,
+      "posTest": 334
+    },
+    {
+      "facilityCode": "SEA",
+      "completedTest": 1546,
+      "pendTest": 0,
+      "posTest": 1032
+    },
+    {
+      "facilityCode": "SET",
+      "completedTest": 763,
+      "pendTest": 2,
+      "posTest": 227
+    },
+    {
+      "facilityCode": "SHE",
+      "completedTest": 1523,
+      "pendTest": 0,
+      "posTest": 623
+    },
+    {
+      "facilityCode": "SPG",
+      "completedTest": 812,
+      "pendTest": 0,
+      "posTest": 385
+    },
+    {
+      "facilityCode": "SST",
+      "completedTest": 957,
+      "pendTest": 0,
+      "posTest": 561
+    },
+    {
+      "facilityCode": "TAL",
+      "completedTest": 763,
+      "pendTest": 25,
+      "posTest": 359
+    },
+    {
+      "facilityCode": "TCN",
+      "completedTest": 251,
+      "pendTest": 0,
+      "posTest": 98
+    },
+    {
+      "facilityCode": "TCP",
+      "completedTest": 1359,
+      "pendTest": 0,
+      "posTest": 851
+    },
+    {
+      "facilityCode": "TDG",
+      "completedTest": 940,
+      "pendTest": 0,
+      "posTest": 331
+    },
+    {
+      "facilityCode": "TEX",
+      "completedTest": 1139,
+      "pendTest": 0,
+      "posTest": 707
+    },
+    {
+      "facilityCode": "THA",
+      "completedTest": 1290,
+      "pendTest": 0,
+      "posTest": 477
+    },
+    {
+      "facilityCode": "THP",
+      "completedTest": 1187,
+      "pendTest": 0,
+      "posTest": 663
+    },
+    {
+      "facilityCode": "TOM",
+      "completedTest": 976,
+      "pendTest": 0,
+      "posTest": 610
+    },
+    {
+      "facilityCode": "TRM",
+      "completedTest": 820,
+      "pendTest": 0,
+      "posTest": 532
+    },
+    {
+      "facilityCode": "TRV",
+      "completedTest": 1231,
+      "pendTest": 0,
+      "posTest": 535
+    },
+    {
+      "facilityCode": "VIM",
+      "completedTest": 1354,
+      "pendTest": 0,
+      "posTest": 522
+    },
+    {
+      "facilityCode": "VIP",
+      "completedTest": 989,
+      "pendTest": 0,
+      "posTest": 435
+    },
+    {
+      "facilityCode": "VVM",
+      "completedTest": 1446,
+      "pendTest": 0,
+      "posTest": 543
+    },
+    {
+      "facilityCode": "WAS",
+      "completedTest": 708,
+      "pendTest": 0,
+      "posTest": 510
+    },
+    {
+      "facilityCode": "WIL",
+      "completedTest": 1359,
+      "pendTest": 0,
+      "posTest": 379
+    },
+    {
+      "facilityCode": "YAM",
+      "completedTest": 1440,
+      "pendTest": 1,
+      "posTest": 985
+    },
+    {
+      "facilityCode": "YAN",
+      "completedTest": 279,
+      "pendTest": 0,
+      "posTest": 227
+    },
+    {
+      "facilityCode": "YAP",
+      "completedTest": 718,
+      "pendTest": 0,
+      "posTest": 393
+    },
+    {
+      "facilityCode": "YAZ",
+      "completedTest": 1268,
+      "pendTest": 30,
+      "posTest": 353
+    }
+  ],
+  "rrcTesting": [
+    {
+      "facilityName": "GEO CARE INC CORDOVA CENTER (ANCHORAGE, AK)",
+      "facilityCode": "0DY",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "NWRRC (PORTLAND, OR)",
+      "facilityCode": "0FJ",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "PIONEER FELLOWSHIP HOUSE (SEATTLE, WA)",
+      "facilityCode": "0HC",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "SPOKANE RRC SITE #2 (SPOKANE, WA)",
+      "facilityCode": "0SP",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "TACOMA RRC (TACOMA, WA)",
+      "facilityCode": "0TA",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "COOLIDGE HOUSE (BOSTON, MA)",
+      "facilityCode": "1BN",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "CHERRY STREET SERVICES, INC (DETROIT, MI)",
+      "facilityCode": "2CA",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "DIERSEN - NASHVILLE (NASHVILLE, TN)",
+      "facilityCode": "2FI",
+      "completedTest": 2,
+      "pendTest": 1,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DISMAS CHARITIES COMM.CORR.CTR (GREENSBORO, NC)",
+      "facilityCode": "2FL",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DIERSON CHARITIES MEMPHIS (MEMPHIS, TN)",
+      "facilityCode": "2FS",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "DISMAS CHARLESTON (ST ALBANS, WV)",
+      "facilityCode": "2IC",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "COMMUNITY SOLUTIONS INC (WILMINGTON, DE)",
+      "facilityCode": "2IK",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 0
+    },
+    {
+      "facilityName": "GHENT RRC (NORFOLK, VA)",
+      "facilityCode": "3FS",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA CSC (BALTIMORE, MD)",
+      "facilityCode": "3GS",
+      "completedTest": 18,
+      "pendTest": 5,
+      "posTest": 16
+    },
+    {
+      "facilityName": "JAMES RIVER RRC (NEWPORT NEWS, VA)",
+      "facilityCode": "3QI",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "DISMAS OF LEXINGTON (LEXINGTON, KY)",
+      "facilityCode": "3VT",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "CAPITOL PAVILION COMM CORR CTR (HARRISBURG, PA)",
+      "facilityCode": "3XG",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "THE KINTOCK GROUP (PHILADELPHIA, PA)",
+      "facilityCode": "3XU",
+      "completedTest": 12,
+      "pendTest": 0,
+      "posTest": 12
+    },
+    {
+      "facilityName": "BRONX COMMUNITY REENTRY CENTER (BRONX, NY)",
+      "facilityCode": "3YK",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA (ROCHESTER, NY)",
+      "facilityCode": "3YM",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RENEWAL INC. (PITTSBURGH, PA)",
+      "facilityCode": "3ZI",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "ORIANA HOUSE (CLEVELAND, OH)",
+      "facilityCode": "3ZO",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RRC, SPANISH FORT, ALABAMA (SPANISH FORT, AL)",
+      "facilityCode": "4BN",
+      "completedTest": 2,
+      "pendTest": 1,
+      "posTest": 2
+    },
+    {
+      "facilityName": "RRC, JACKSON, MISSISSIPPI (JACKSON, MS)",
+      "facilityCode": "4CD",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "DISMAS CHARITIES OF LOUISVILLE (LOUISVILLE, KY)",
+      "facilityCode": "4DZ",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "THE SALVATION ARMY (WEST PALM BEACH, FL)",
+      "facilityCode": "4EM",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "MIDWAY REHAB CENTER, KNOXVILLE (KNOXVILLE, TN)",
+      "facilityCode": "4FX",
+      "completedTest": 14,
+      "pendTest": 0,
+      "posTest": 14
+    },
+    {
+      "facilityName": "DISMAS HOUSE CHARITIES, INC. (DANIA, FL)",
+      "facilityCode": "4LA",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "RRC, BIRMINGHAM, ALABAMA (BIRMINGHAM, AL)",
+      "facilityCode": "4MC",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "RIVERSIDE HOUSE (MIAMI, FL)",
+      "facilityCode": "4MQ",
+      "completedTest": 7,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "OCALA RESIDENTL REENTRY CENTER (OCALA, FL)",
+      "facilityCode": "4NS",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "SALVATION ARMY CTR,CHATTANOOGA (CHATTANOOGA, TN)",
+      "facilityCode": "4PE",
+      "completedTest": 9,
+      "pendTest": 0,
+      "posTest": 9
+    },
+    {
+      "facilityName": "SALVATION ARMY (FT MYERS, FL)",
+      "facilityCode": "4QY",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "RRC-ALSTON WILKES SOCIETY (FLORENCE, SC)",
+      "facilityCode": "4U3",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "RRC, HATTIESBURG, MISSISSIPPI (HATTIESBURG, MS)",
+      "facilityCode": "4U4",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "JACKSONVILLE RESID REENTRY CTR (JACKSONVILLE, FL)",
+      "facilityCode": "4U5",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "TALLAHASSEE RRC (TALLAHASSEE, FL)",
+      "facilityCode": "4V2",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "HILLSBOROUGH CO. RRC, TAMPA,FL (TAMPA, FL)",
+      "facilityCode": "4WP",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "RRC-ALSTON WILKES SOCIETY (COLUMBIA, SC)",
+      "facilityCode": "4WR",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "BANYAN COMMUNITY HEALTH CENTER (MIAMI, FL)",
+      "facilityCode": "4XH",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DISMAS CHARITIES OF ORLANDO (ORLANDO, FL)",
+      "facilityCode": "4Y8",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "RRC DISMAS HOUSE OF MACON (MACON, GA)",
+      "facilityCode": "4ZY",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "KALAMAZOO PROB ENHANCEMENT PRO (BENTON HARBOR, MI)",
+      "facilityCode": "5B5",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "KALAMAZOO PROB ENHANCEMENT PRO (KALAMAZOO, MI)",
+      "facilityCode": "5B7",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA OF MN (MINNEAPOLIS, MN)",
+      "facilityCode": "5BH",
+      "completedTest": 7,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "TALBERT HOUSE FOR WOMEN (CINCINNATI, OH)",
+      "facilityCode": "5EL",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "ROCK VALLEY COMMUNITY PROGRAMS (JANESVILLE, WI)",
+      "facilityCode": "5GH",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "PARSONS HOUSE (MILWAUKEE, WI)",
+      "facilityCode": "5HY",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "COMM CORR ASSOC, INC. (YOUNGSTOWN, OH)",
+      "facilityCode": "5KU",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "PACT INC. PACT-BRADLEY HOUSE (MICHIGAN CITY, IN)",
+      "facilityCode": "5LC",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "TALBERT HOUSE FOR MEN (CINCINNATI, OH)",
+      "facilityCode": "5LH",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA INC. (INDIANAPOLIS, IN)",
+      "facilityCode": "5LK",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "CENTERSTONE OF ILLINOIS (MARION, IL)",
+      "facilityCode": "5RN",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "SALVATION ARMY CORRECTIONAL SE (CHICAGO, IL)",
+      "facilityCode": "5SA",
+      "completedTest": 14,
+      "pendTest": 1,
+      "posTest": 14
+    },
+    {
+      "facilityName": "FAMILY GUIDANCE CENTERS, INC. (SPRINGFIELD, IL)",
+      "facilityCode": "5TJ",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "CHERRY STREET SERVICES, INC. (GRAND RAPIDS, MI)",
+      "facilityCode": "5TZ",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "SOUTH RALEIGH RE-ENTRY CENTER (RALEIGH, NC)",
+      "facilityCode": "5YW",
+      "completedTest": 3,
+      "pendTest": 1,
+      "posTest": 3
+    },
+    {
+      "facilityName": "COMMUNITY EDUCATION CENTERS IN (RAPID CITY, SD)",
+      "facilityCode": "5ZZ",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "VOL OF AMER, NEW ORLEANS, RRC (NEW ORLEANS, LA)",
+      "facilityCode": "6BB",
+      "completedTest": 1,
+      "pendTest": 1,
+      "posTest": 0
+    },
+    {
+      "facilityName": "REALITY HOUSE, GEO (BROWNSVILLE, TX)",
+      "facilityCode": "6HN",
+      "completedTest": 10,
+      "pendTest": 3,
+      "posTest": 10
+    },
+    {
+      "facilityName": "VOL. OF AMER. DALLAS, TX (HUTCHINS, TX)",
+      "facilityCode": "6PQ",
+      "completedTest": 6,
+      "pendTest": 7,
+      "posTest": 6
+    },
+    {
+      "facilityName": "VOL OF AMER. FT WORTH, TEXAS (FORT WORTH, TX)",
+      "facilityCode": "6QM",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "SALVATION ARMY WACO (WACO, TX)",
+      "facilityCode": "6SA",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "CROSSPOINT SAN ANTONIO (SAN ANTONIO, TX)",
+      "facilityCode": "6UC",
+      "completedTest": 3,
+      "pendTest": 1,
+      "posTest": 3
+    },
+    {
+      "facilityName": "COUNTY REHABILITATION CENTER (TYLER, TX)",
+      "facilityCode": "6VR",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "DISMAS CORPUS CHRISTI (CORPUS CHRISTI, TX)",
+      "facilityCode": "6ZB",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "LEIDEL SANCTION CENTER (HOUSTON, TX)",
+      "facilityCode": "6ZE",
+      "completedTest": 7,
+      "pendTest": 2,
+      "posTest": 6
+    },
+    {
+      "facilityName": "DISMAS LAS CRUCES (LAS CRUCES, NM)",
+      "facilityCode": "6ZF",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "DISMAS DEL RIO (DEL RIO, TX)",
+      "facilityCode": "6ZJ",
+      "completedTest": 11,
+      "pendTest": 0,
+      "posTest": 11
+    },
+    {
+      "facilityName": "DISMAS EL PASO (EL PASO, TX)",
+      "facilityCode": "6ZM",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "MID-VALLEY HOUSE (EDINBURG, TX)",
+      "facilityCode": "6ZR",
+      "completedTest": 14,
+      "pendTest": 1,
+      "posTest": 14
+    },
+    {
+      "facilityName": "DISMAS CHARITIES, ALBUQUERQUE (ALBUQUERQUE, NM)",
+      "facilityCode": "6ZV",
+      "completedTest": 15,
+      "pendTest": 7,
+      "posTest": 15
+    },
+    {
+      "facilityName": "DISMAS MIDLAND (MIDLAND, TX)",
+      "facilityCode": "6ZX",
+      "completedTest": 9,
+      "pendTest": 0,
+      "posTest": 9
+    },
+    {
+      "facilityName": "DISMAS LAREDO (LAREDO, TX)",
+      "facilityCode": "6ZY",
+      "completedTest": 8,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "DISMAS HOUSE OF ST. LOUIS (ST. LOUIS, MO)",
+      "facilityCode": "7AW",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "SOUTHEAST MO BEHAVIORAL HEALTH (FARMINGTON, MO)",
+      "facilityCode": "7BE",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "CYDKAM CENTER, LLC (NEELYVILLE, MO)",
+      "facilityCode": "7D1",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "ALPHA HOUSE OF SPRINGFIELD (SPRINGFIELD, MO)",
+      "facilityCode": "7FH",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "DISMAS CHARITIES, INC (SIOUX CITY, IA)",
+      "facilityCode": "7I1",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "MIRROR, INC., THE (TOPEKA, KS)",
+      "facilityCode": "7I2",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DISMAS CHARITIES AT KEARNEY (KEARNEY, NE)",
+      "facilityCode": "7M8",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "COMMUNITY EXTENDED NUCLEAR TRA (FARGO, ND)",
+      "facilityCode": "7M9",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA OF MN (ROSEVILLE, MN)",
+      "facilityCode": "7MZ",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "VOAGO RESIDENTIAL REENTRY PGM (TOLEDO, OH)",
+      "facilityCode": "7N0",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DISMAS OF MANCHESTER (MANCHESTER, KY)",
+      "facilityCode": "7N3",
+      "completedTest": 15,
+      "pendTest": 0,
+      "posTest": 15
+    },
+    {
+      "facilityName": "DISMAS CHARITIES AT OMAHA (OMAHA, NE)",
+      "facilityCode": "7N6",
+      "completedTest": 11,
+      "pendTest": 0,
+      "posTest": 11
+    },
+    {
+      "facilityName": "CORRECTIONAL SOLUTIONS GROUP (WICHITA, KS)",
+      "facilityCode": "7N8",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RRK ENTERPRISES DBA INDEPENDEN (DENVER, CO)",
+      "facilityCode": "7NP",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "COMMUNITY EXTENDED NUCLEAR TRA (MANDAN, ND)",
+      "facilityCode": "7NQ",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "LUTHERAN SOCIAL SERVICES (EAU CLAIRE, WI)",
+      "facilityCode": "7RV",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "GEO REENTRY INC. (LEAVENWORTH, KS)",
+      "facilityCode": "7XM",
+      "completedTest": 14,
+      "pendTest": 0,
+      "posTest": 14
+    },
+    {
+      "facilityName": "MIRROR, INC. (WICHITA, KS)",
+      "facilityCode": "7YA",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "BANNUM, INC (SAGINAW, MI)",
+      "facilityCode": "7YN",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 0
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA OF IN (EVANSVILLE, IN)",
+      "facilityCode": "7ZL",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "PORT OF HOPE BOISE RESIDENTIAL (BOISE, ID)",
+      "facilityCode": "8BD",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "CASPER REENTRY CENTER, ACC (MILLS, WY)",
+      "facilityCode": "8BE",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "GREAT FALLS PRE-RELEASE CENTER (GREAT FALLS, MT)",
+      "facilityCode": "8BH",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "COMMUNITY EXTENDED NUCLEAR TRA (FARGO, ND)",
+      "facilityCode": "8NE",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "ALPHA HOUSE (BILLINGS, MT)",
+      "facilityCode": "8PD",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "DRC DAY REPORTING CENTER - GEO (SACRAMENTO, CA)",
+      "facilityCode": "9DR",
+      "completedTest": 1,
+      "pendTest": 1,
+      "posTest": 1
+    },
+    {
+      "facilityName": "BSSW FLORENCE (FLORENCE, AZ)",
+      "facilityCode": "9FW",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "DISMAS CCC (TUCSON, AZ)",
+      "facilityCode": "9GZ",
+      "completedTest": 2,
+      "pendTest": 1,
+      "posTest": 2
+    },
+    {
+      "facilityName": "CORRECTIONAL ALTERNATIVES INC. (SAN DIEGO, CA)",
+      "facilityCode": "9KQ",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "GEO CARE (LAS VEGAS, NV)",
+      "facilityCode": "9LB",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "GEO REENTRY/ MARVIN GARDENS (LOS ANGELES, CA)",
+      "facilityCode": "9MG",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "GEO CARE INC. (SALT LAKE CITY, UT)",
+      "facilityCode": "9MM",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "GEO CARE/ EL MONTE (EL MONTE, CA)",
+      "facilityCode": "9MN",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RRC GEO-TAYLOR STREET FACL SF (SAN FRANCISCO, CA)",
+      "facilityCode": "9NL",
+      "completedTest": 7,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "RRC TURNING POINT - FRESNO (FRESNO, CA)",
+      "facilityCode": "9PA",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "GARDEN GROVE CCC (GARDEN GROVE, CA)",
+      "facilityCode": "9PN",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "VINEWOOD RE-ENTRY CCC (LOS ANGELES, CA)",
+      "facilityCode": "9RA",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RUBIDOUX RRC (RUBIDOUX, CA)",
+      "facilityCode": "9SF",
+      "completedTest": 12,
+      "pendTest": 0,
+      "posTest": 12
+    },
+    {
+      "facilityName": "BSSW-RRC PHX (PHOENIX, AZ)",
+      "facilityCode": "9TM",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "BRAWLEY RRC (BRAWLEY, CA)",
+      "facilityCode": "9WD",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
+      "facilityName": "RRC GEO REENTRY INC - OAKLAND (OAKLAND, CA)",
+      "facilityCode": "9WM",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "BRIDGES REINTEGRATION CENTER (JACKSONVILLE, FL)",
+      "facilityCode": "AA3",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "CSC-DISMAS CHARITIES, INC (ATLANTA, GA)",
+      "facilityCode": "AAE",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "VOLUNTEERS OF AMERICA, INC (SAN JUAN, RQ)",
+      "facilityCode": "AAR",
+      "completedTest": 7,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "RRC, MONTGOMERY, ALABAMA (MONTGOMERY, AL)",
+      "facilityCode": "AAS",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "DISMAS CHARITIES, INC (AUGUSTA, GA)",
+      "facilityCode": "AB1",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 4
+    },
+    {
+      "facilityName": "RRC DISMAS CHARITIES, INC (SAVANNAH, GA)",
+      "facilityCode": "AB2",
+      "completedTest": 6,
+      "pendTest": 0,
+      "posTest": 6
+    },
+    {
+      "facilityName": "GEO RESIDENTIAL REENTRY CENTER (TAMPA, FL)",
+      "facilityCode": "AB5",
+      "completedTest": 5,
+      "pendTest": 0,
+      "posTest": 5
+    },
+    {
+      "facilityName": "BROOKLYN HOUSE (BROOKLYN, NY)",
+      "facilityCode": "EB1",
+      "completedTest": 11,
+      "pendTest": 0,
+      "posTest": 11
+    },
+    {
+      "facilityName": "HORIZON HOUSE (ALBANY, NY)",
+      "facilityCode": "EB3",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "THE KINTOCK GROUP RRC (BRIDGETON, NJ)",
+      "facilityCode": "ED1",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "KINTOCK RRC (NEWARK, NJ)",
+      "facilityCode": "GA5",
+      "completedTest": 7,
+      "pendTest": 0,
+      "posTest": 7
+    },
+    {
+      "facilityName": "SYRACUSE PAVILION (SYRACUSE, NY)",
+      "facilityCode": "GAA",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "RENEWAL INC FEMALES (PITTSBURGH, PA)",
+      "facilityCode": "GBE",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "HAMPSHIRE HOUSE (MANCHESTER, NH)",
+      "facilityCode": "GBW",
+      "completedTest": 3,
+      "pendTest": 0,
+      "posTest": 3
+    },
+    {
+      "facilityName": "DRAPELICK CENTER (BLOOMFIELD, CT)",
+      "facilityCode": "H3Z",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "CORECIVIC, INC (OKLAHOMA, CITY, OK)",
+      "facilityCode": "QA1",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "AVALON AUSTIN CORECIVIC (DEL VALLE, TX)",
+      "facilityCode": "RA1",
+      "completedTest": 7,
+      "pendTest": 1,
+      "posTest": 5
+    },
+    {
+      "facilityName": "ALSTON WILKES-FAYETTEVILLE,NC (FAYETTEVILLE, NC)",
+      "facilityCode": "SA1",
+      "completedTest": 1,
+      "pendTest": 0,
+      "posTest": 1
+    },
+    {
+      "facilityName": "CORE DC, LLC (WASHINGTON, DC)",
+      "facilityCode": "SA2",
+      "completedTest": 2,
+      "pendTest": 0,
+      "posTest": 2
+    }
+  ]
+}

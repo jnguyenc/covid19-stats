@@ -1,0 +1,545 @@
+{
+  "vaxTotal": [
+    {
+      "totalAllocation": 373210,
+      "totalDoses": 329626
+    }
+  ],
+  "bopVaccine": [
+    {
+      "facility": "ALD",
+      "staffCompleted": 74,
+      "inmateCompleted": 693
+    },
+    {
+      "facility": "ALI",
+      "staffCompleted": 164,
+      "inmateCompleted": 1547
+    },
+    {
+      "facility": "ALX",
+      "staffCompleted": 502,
+      "inmateCompleted": 2282
+    },
+    {
+      "facility": "ASH",
+      "staffCompleted": 172,
+      "inmateCompleted": 1272
+    },
+    {
+      "facility": "ATL",
+      "staffCompleted": 241,
+      "inmateCompleted": 915
+    },
+    {
+      "facility": "ATW",
+      "staffCompleted": 212,
+      "inmateCompleted": 749
+    },
+    {
+      "facility": "BAS",
+      "staffCompleted": 170,
+      "inmateCompleted": 1418
+    },
+    {
+      "facility": "BEC",
+      "staffCompleted": 235,
+      "inmateCompleted": 1289
+    },
+    {
+      "facility": "BEN",
+      "staffCompleted": 167,
+      "inmateCompleted": 1257
+    },
+    {
+      "facility": "BER",
+      "staffCompleted": 153,
+      "inmateCompleted": 716
+    },
+    {
+      "facility": "BIG",
+      "staffCompleted": 101,
+      "inmateCompleted": 1067
+    },
+    {
+      "facility": "BMX",
+      "staffCompleted": 453,
+      "inmateCompleted": 3881
+    },
+    {
+      "facility": "BOP",
+      "staffCompleted": 575,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "BRO",
+      "staffCompleted": 294,
+      "inmateCompleted": 1452
+    },
+    {
+      "facility": "BRY",
+      "staffCompleted": 106,
+      "inmateCompleted": 858
+    },
+    {
+      "facility": "BSY",
+      "staffCompleted": 206,
+      "inmateCompleted": 1021
+    },
+    {
+      "facility": "BUX",
+      "staffCompleted": 978,
+      "inmateCompleted": 3843
+    },
+    {
+      "facility": "CAA",
+      "staffCompleted": 209,
+      "inmateCompleted": 1286
+    },
+    {
+      "facility": "CCC",
+      "staffCompleted": 163,
+      "inmateCompleted": 882
+    },
+    {
+      "facility": "COX",
+      "staffCompleted": 757,
+      "inmateCompleted": 5400
+    },
+    {
+      "facility": "CRW",
+      "staffCompleted": 335,
+      "inmateCompleted": 1623
+    },
+    {
+      "facility": "CUM",
+      "staffCompleted": 219,
+      "inmateCompleted": 1235
+    },
+    {
+      "facility": "DAN",
+      "staffCompleted": 202,
+      "inmateCompleted": 964
+    },
+    {
+      "facility": "DET",
+      "staffCompleted": 30,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "DEV",
+      "staffCompleted": 368,
+      "inmateCompleted": 958
+    },
+    {
+      "facility": "DTH",
+      "staffCompleted": 59,
+      "inmateCompleted": 260
+    },
+    {
+      "facility": "DUB",
+      "staffCompleted": 191,
+      "inmateCompleted": 1283
+    },
+    {
+      "facility": "EDG",
+      "staffCompleted": 222,
+      "inmateCompleted": 1634
+    },
+    {
+      "facility": "ELK",
+      "staffCompleted": 235,
+      "inmateCompleted": 1785
+    },
+    {
+      "facility": "ENG",
+      "staffCompleted": 144,
+      "inmateCompleted": 906
+    },
+    {
+      "facility": "ERE",
+      "staffCompleted": 208,
+      "inmateCompleted": 1234
+    },
+    {
+      "facility": "EST",
+      "staffCompleted": 124,
+      "inmateCompleted": 101
+    },
+    {
+      "facility": "FAI",
+      "staffCompleted": 169,
+      "inmateCompleted": 926
+    },
+    {
+      "facility": "FLX",
+      "staffCompleted": 457,
+      "inmateCompleted": 2185
+    },
+    {
+      "facility": "FOX",
+      "staffCompleted": 285,
+      "inmateCompleted": 3091
+    },
+    {
+      "facility": "FTD",
+      "staffCompleted": 277,
+      "inmateCompleted": 3219
+    },
+    {
+      "facility": "FTW",
+      "staffCompleted": 262,
+      "inmateCompleted": 1676
+    },
+    {
+      "facility": "GIL",
+      "staffCompleted": 178,
+      "inmateCompleted": 1503
+    },
+    {
+      "facility": "GLN",
+      "staffCompleted": null,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "GRA",
+      "staffCompleted": 332,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "GRE",
+      "staffCompleted": 170,
+      "inmateCompleted": 1264
+    },
+    {
+      "facility": "GUA",
+      "staffCompleted": 201,
+      "inmateCompleted": 1868
+    },
+    {
+      "facility": "HAX",
+      "staffCompleted": 487,
+      "inmateCompleted": 3274
+    },
+    {
+      "facility": "HER",
+      "staffCompleted": 127,
+      "inmateCompleted": 1225
+    },
+    {
+      "facility": "HON",
+      "staffCompleted": 139,
+      "inmateCompleted": 374
+    },
+    {
+      "facility": "HOU",
+      "staffCompleted": 147,
+      "inmateCompleted": 1097
+    },
+    {
+      "facility": "JES",
+      "staffCompleted": 153,
+      "inmateCompleted": 1220
+    },
+    {
+      "facility": "LAT",
+      "staffCompleted": 194,
+      "inmateCompleted": 1389
+    },
+    {
+      "facility": "LEE",
+      "staffCompleted": 231,
+      "inmateCompleted": 970
+    },
+    {
+      "facility": "LEW",
+      "staffCompleted": 256,
+      "inmateCompleted": 1158
+    },
+    {
+      "facility": "LEX",
+      "staffCompleted": 370,
+      "inmateCompleted": 1453
+    },
+    {
+      "facility": "LOR",
+      "staffCompleted": 164,
+      "inmateCompleted": 916
+    },
+    {
+      "facility": "LOS",
+      "staffCompleted": 170,
+      "inmateCompleted": 644
+    },
+    {
+      "facility": "LOX",
+      "staffCompleted": 278,
+      "inmateCompleted": 2316
+    },
+    {
+      "facility": "LVN",
+      "staffCompleted": 190,
+      "inmateCompleted": 2031
+    },
+    {
+      "facility": "MAN",
+      "staffCompleted": 123,
+      "inmateCompleted": 1044
+    },
+    {
+      "facility": "MAR",
+      "staffCompleted": 171,
+      "inmateCompleted": 1397
+    },
+    {
+      "facility": "MCD",
+      "staffCompleted": 149,
+      "inmateCompleted": 1294
+    },
+    {
+      "facility": "MCK",
+      "staffCompleted": 58,
+      "inmateCompleted": 988
+    },
+    {
+      "facility": "MCR",
+      "staffCompleted": 186,
+      "inmateCompleted": 1458
+    },
+    {
+      "facility": "MEM",
+      "staffCompleted": 180,
+      "inmateCompleted": 1270
+    },
+    {
+      "facility": "MEN",
+      "staffCompleted": 217,
+      "inmateCompleted": 1327
+    },
+    {
+      "facility": "MIA",
+      "staffCompleted": 123,
+      "inmateCompleted": 840
+    },
+    {
+      "facility": "MIL",
+      "staffCompleted": 180,
+      "inmateCompleted": 1235
+    },
+    {
+      "facility": "MIM",
+      "staffCompleted": 142,
+      "inmateCompleted": 1345
+    },
+    {
+      "facility": "MNA",
+      "staffCompleted": 160,
+      "inmateCompleted": 844
+    },
+    {
+      "facility": "MON",
+      "staffCompleted": 81,
+      "inmateCompleted": 545
+    },
+    {
+      "facility": "MRG",
+      "staffCompleted": 101,
+      "inmateCompleted": 524
+    },
+    {
+      "facility": "MXR",
+      "staffCompleted": 43,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "NCR",
+      "staffCompleted": 62,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "NYM",
+      "staffCompleted": 120,
+      "inmateCompleted": 312
+    },
+    {
+      "facility": "OAX",
+      "staffCompleted": 237,
+      "inmateCompleted": 2045
+    },
+    {
+      "facility": "OKL",
+      "staffCompleted": 169,
+      "inmateCompleted": 1081
+    },
+    {
+      "facility": "OTV",
+      "staffCompleted": 142,
+      "inmateCompleted": 700
+    },
+    {
+      "facility": "OXF",
+      "staffCompleted": 115,
+      "inmateCompleted": 803
+    },
+    {
+      "facility": "PEK",
+      "staffCompleted": 132,
+      "inmateCompleted": 1196
+    },
+    {
+      "facility": "PEN",
+      "staffCompleted": 59,
+      "inmateCompleted": 421
+    },
+    {
+      "facility": "PEX",
+      "staffCompleted": 405,
+      "inmateCompleted": 2670
+    },
+    {
+      "facility": "PHL",
+      "staffCompleted": 200,
+      "inmateCompleted": 1144
+    },
+    {
+      "facility": "PHX",
+      "staffCompleted": 168,
+      "inmateCompleted": 1294
+    },
+    {
+      "facility": "POX",
+      "staffCompleted": 386,
+      "inmateCompleted": 2819
+    },
+    {
+      "facility": "RBK",
+      "staffCompleted": 143,
+      "inmateCompleted": 621
+    },
+    {
+      "facility": "RCH",
+      "staffCompleted": 332,
+      "inmateCompleted": 668
+    },
+    {
+      "facility": "SAF",
+      "staffCompleted": 125,
+      "inmateCompleted": 921
+    },
+    {
+      "facility": "SCH",
+      "staffCompleted": 169,
+      "inmateCompleted": 1185
+    },
+    {
+      "facility": "SCR",
+      "staffCompleted": 58,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "SDC",
+      "staffCompleted": 156,
+      "inmateCompleted": 2016
+    },
+    {
+      "facility": "SEA",
+      "staffCompleted": 189,
+      "inmateCompleted": 1870
+    },
+    {
+      "facility": "SER",
+      "staffCompleted": 55,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "SET",
+      "staffCompleted": 116,
+      "inmateCompleted": 984
+    },
+    {
+      "facility": "SHE",
+      "staffCompleted": 224,
+      "inmateCompleted": 1793
+    },
+    {
+      "facility": "SPG",
+      "staffCompleted": 438,
+      "inmateCompleted": 1069
+    },
+    {
+      "facility": "SST",
+      "staffCompleted": 146,
+      "inmateCompleted": 1044
+    },
+    {
+      "facility": "TAL",
+      "staffCompleted": 100,
+      "inmateCompleted": 1160
+    },
+    {
+      "facility": "TCX",
+      "staffCompleted": 442,
+      "inmateCompleted": 1804
+    },
+    {
+      "facility": "TDG",
+      "staffCompleted": 151,
+      "inmateCompleted": 973
+    },
+    {
+      "facility": "TEX",
+      "staffCompleted": 158,
+      "inmateCompleted": 1176
+    },
+    {
+      "facility": "THX",
+      "staffCompleted": 425,
+      "inmateCompleted": 2426
+    },
+    {
+      "facility": "TOM",
+      "staffCompleted": 348,
+      "inmateCompleted": 901
+    },
+    {
+      "facility": "TRM",
+      "staffCompleted": 211,
+      "inmateCompleted": 754
+    },
+    {
+      "facility": "TRV",
+      "staffCompleted": 177,
+      "inmateCompleted": 1557
+    },
+    {
+      "facility": "VIX",
+      "staffCompleted": 506,
+      "inmateCompleted": 4190
+    },
+    {
+      "facility": "WAS",
+      "staffCompleted": 120,
+      "inmateCompleted": 880
+    },
+    {
+      "facility": "WIL",
+      "staffCompleted": 208,
+      "inmateCompleted": 1576
+    },
+    {
+      "facility": "WXR",
+      "staffCompleted": 50,
+      "inmateCompleted": 0
+    },
+    {
+      "facility": "YAN",
+      "staffCompleted": 84,
+      "inmateCompleted": 433
+    },
+    {
+      "facility": "YAX",
+      "staffCompleted": 408,
+      "inmateCompleted": 3331
+    }
+  ]
+}
