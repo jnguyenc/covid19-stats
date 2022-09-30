@@ -16,11 +16,18 @@ function renderOptions(columns, targetId) {
   return options;
 }
 
+function renderShowColumnButtons(columns) {
+  let showButtons = '';
+  const columnsKeys = Object.keys(columns);
+  columnsKeys.forEach((key) => { showButtons += `<div class="hide" data-key="${key}"/><i class="bi bi-eye"></i><span>${columns[key]}</span></div>`; });
+  return `<div class="showColumns">${showButtons}</div>`;
+}
+
 function renderTableCols(columns) {
   let cols = '';
 
   const columnsKeys = Object.keys(columns);
-  columnsKeys.forEach((key) => { cols += `<col data-key="${key}" class="active" />`; });
+  columnsKeys.forEach((key) => { cols += `<col data-key="${key}"/>`; });
 
   cols = `<colgroup>${cols}</colgroup>`;
   return cols;
@@ -34,7 +41,8 @@ function renderTableHead(columns) {
   // columnsName.forEach((name) => {  });
   const columnsKeys = Object.keys(columns);
   columnsKeys.forEach((key) => {
-    row += `<th data-key="${key}">${columns[key]}</th>`;
+    row += `<th title="Click to sort" data-key="${key}"><i data-role="show" class="bi bi-eye-slash"></i>`
+        + `<span>${columns[key]}</span><i data-role="sort"></i></th>`;
   });
 
   head = `<thead class="thead-dark"><tr>${row}</tr></thead>`;
@@ -51,13 +59,15 @@ function renderTableBody(data, columns) {
     row = '';
     columnsKeys.forEach((key) => {
       let value = element[key];
+      let title = '';
       if (value === undefined || value === null) {
         value = '...';
+        title = 'title="Information Not Available"';
       }
       if (key === 'city') {
         value = capitalizeAll(value);
       }
-      row += `<td data-key="${key}">${value}</td>`;
+      row += `<td ${title} data-key="${key}">${value}</td>`;
     });
 
     rows += `<tr>${row}</tr>`;
@@ -69,6 +79,7 @@ function renderTableBody(data, columns) {
 
 function renderTable(data, columns, targetId) {
   const options = renderOptions(columns, targetId);
+  const showColumnButtons = renderShowColumnButtons(columns);
   const cols = renderTableCols(columns);
   const head = renderTableHead(columns);
   const body = renderTableBody(data, columns);
@@ -88,6 +99,7 @@ function writeTable(data, columns, domTarget = '#noID') {
     if (domTarget === '#noID') {
       target.id = randomString(8);
     } else {
+      // html id atrribute does not have the #, so remove it
       target.id = domTarget.replace('#', '');
     }
   }
