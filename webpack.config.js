@@ -40,13 +40,13 @@ module.exports = (env, argv) => {
         },
         output: {
             filename: '[name].[contenthash].bundle.js',
-            path: path.resolve(__dirname, mode === 'development' ? 'dist/dev' : 'public'),
+            path: path.resolve(__dirname, mode === 'development' ? 'dev' : 'public'),
             clean: true,
         },
         devtool: mode === 'development' ? 'source-map' : false,
         devServer: {
             static: {
-                directory: path.resolve(__dirname, 'dist/server'),
+                directory: path.resolve(__dirname, 'src'),
             },
             port: 9090,
             compress: true,
