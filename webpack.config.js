@@ -6,8 +6,12 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
     let mode = 'development';
+    let isCopyingData = false;
     if (argv.mode === 'production') {
         mode = 'production';
+    }
+    if (env.copyData) {
+        isCopyingData = true;
     }
 
     const config = {
@@ -21,9 +25,6 @@ module.exports = (env, argv) => {
                 template: path.resolve(__dirname, './src/index.html'),
             }),
             new WebpackManifestPlugin(),
-            new CopyPlugin({
-                patterns: [{ from: path.resolve(__dirname, 'src/data'), to: path.resolve(__dirname, 'public/data') }],
-            }),
         ],
         module: {
             rules: [
@@ -57,6 +58,19 @@ module.exports = (env, argv) => {
             hot: true,
         },
     };
+
+    if (isCopyingData) {
+        config.plugins.push(
+            new CopyPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(__dirname, 'src/data'),
+                        to: path.resolve(__dirname, mode === 'development' ? 'dev/data' : 'public/data'),
+                    },
+                ],
+            })
+        );
+    }
 
     return config;
 };
