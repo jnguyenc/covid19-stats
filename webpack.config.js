@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
     let mode = 'development';
@@ -20,6 +21,9 @@ module.exports = (env, argv) => {
                 template: path.resolve(__dirname, './src/index.html'),
             }),
             new WebpackManifestPlugin(),
+            new CopyPlugin({
+                patterns: [{ from: path.resolve(__dirname, 'src/data'), to: path.resolve(__dirname, 'public/data') }],
+            }),
         ],
         module: {
             rules: [
