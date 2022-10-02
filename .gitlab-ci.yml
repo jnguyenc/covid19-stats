@@ -3,7 +3,7 @@ image: node:lts
 pages:
   script:
     - npm install
-    - npm build
+    - npm run build
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
