@@ -79,6 +79,18 @@ function addEventListeners(target) {
 
   const columnsEye = target.querySelectorAll('thead th i[data-role="show"]');
   columnsEye.forEach((obj) => { obj.addEventListener('click', columnEyeEventHandler); });
+
+  const optionExpand = target.querySelector('div .btn');
+  optionExpand.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const targetElement = event.target;
+    const targetDiv = targetElement.closest('div.dataholder');
+    const { id } = targetDiv;
+    const label = targetElement.innerHTML;
+
+    targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
+    target.querySelector(`#${id} .options`).classList.toggle('_collapse');
+  });
 }
 
 export default addEventListeners;

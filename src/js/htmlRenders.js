@@ -13,7 +13,9 @@ function renderOptions(columns, targetId) {
   });
 
   options = `<fieldset>${options}</fieldset>`;
-  return options;
+  const optionsButton = 'Table Options <button type="button" class="btn btn-outline-secondary">Expand</button>';
+  const optionWrapper = `<div class="options _collapse">${options}</div>`;
+  return `<div>${optionsButton}${optionWrapper}</div>`;
 }
 
 function renderShowColumnButtons(columns) {
