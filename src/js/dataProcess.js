@@ -19,11 +19,17 @@ function mergeData(dataA, propertyA, dataB, propertyB) {
   return mergedData;
 }
 
-function sortData(arr, sortDirection, getValue) {
-  // getValue is a call-back function to locate the value in the array
-  // example 1: (row) => row.querySelector(`td[data-key="${targetKey}"]`).innerHTML;
-  // example 2: (ele) => ele[key];
+/**
+ * @param {Array} arr
+ * @param {String} sortDirection
+ * @param {Function Object} getValue
+ * @returns {Array}
+ * getValue is a call-back function. It locates the value in the array
+ * example 1: (row) => row.querySelector(`td[data-key="${targetKey}"]`).innerHTML;
+ * example 2: (ele) => ele[key];
+ */
 
+function sortData(arr, sortDirection, getValue) {
   return arr.sort((a, b) => {
     let aValue = getValue(a);
     let bValue = getValue(b);

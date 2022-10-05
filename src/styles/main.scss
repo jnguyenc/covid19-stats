@@ -13,23 +13,38 @@ button{
 .options {
   margin: .5em;
   padding: 0.5em;
-  height: 475px;
+  min-height: 20em;
   z-index: 1;
   background-color: #fff;
   border: 1px solid $color-background;
   border-radius: 5px;
-  transition: height 0.25s;
+  transition: min-height 0.25s;
   transition-timing-function: ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Bootstrap has class collapse */
 ._collapse {
   height: 0 !important;
+  min-height: 0 !important;
   border-radius: 0 !important;
   border-bottom: none !important;
   border-left-color: #fff !important;
   border-right-color: #fff !important;
   overflow: hidden;
+}
+
+.options > fieldset{
+  flex-basis: 250px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  >div{
+    margin: .5em;
+  }
+  label{
+    margin-left: .5em;
+  }
 }
 
 table {
@@ -88,15 +103,6 @@ table {
     }
     tr:hover {
       _border-bottom: 1px solid $color-primary;
-    }
-  }
-}
-
-fieldset {
-  div {
-    margin-left: 1em;
-    label {
-      margin-left: 1em;
     }
   }
 }

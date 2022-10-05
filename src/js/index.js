@@ -14,23 +14,28 @@ fetchData(dataUrls).then((allJson) => {
   const { bopVaccine } = allJson[5];
   const { OpsLevel } = allJson[6];
 
-  let data = [];
+  let bopLocations = [];
+  let rrcLocations = [];
+  let allLocations = [];
 
-  data = mergeData(bopData, 'id', Locations, 'code');
-  data = mergeData(data, 'code', OpsLevel, 'faclCode');
-  data = mergeData(data, 'code', bopVaccine, 'facility');
-  data = mergeData(data, 'code', bopTesting, 'facilityCode');
-  writeTable(data, dataColumns, '#area1');
+  bopLocations = mergeData(bopData, 'id', Locations, 'code');
+  bopLocations = mergeData(bopLocations, 'code', OpsLevel, 'faclCode');
+  bopLocations = mergeData(bopLocations, 'code', bopVaccine, 'facility');
+  bopLocations = mergeData(bopLocations, 'code', bopTesting, 'facilityCode');
+  // writeTable(bopLocations, dataColumns, '#area1');
 
-  data = mergeData(rrcData, 'contractNum', RRC, 'contractNum');
-  data = mergeData(data, 'contractNum', facls, 'contractNum');
-  data = mergeData(data, 'id', rrcTesting, 'facilityName');
-  data = mergeData(data, 'facilityCode', OpsLevel, 'faclCode');
-  writeTable(data, dataColumns);
+  rrcLocations = mergeData(rrcData, 'contractNum', RRC, 'contractNum');
+  rrcLocations = mergeData(rrcLocations, 'contractNum', facls, 'contractNum');
+  rrcLocations = mergeData(rrcLocations, 'id', rrcTesting, 'facilityName');
+  rrcLocations = mergeData(rrcLocations, 'facilityCode', OpsLevel, 'faclCode');
+  // writeTable(rrcLocations, dataColumns);
+
+  allLocations = [...bopLocations, ...rrcLocations];
+  writeTable(allLocations, dataColumns, '#area1');
 
   console.log(privateData);
 
-  // End of .then
+  // Etionf .then
 }).catch((err) => {
   console.error('There was error', err);
 });

@@ -1,15 +1,28 @@
 import { sortData } from './dataProcess';
 
+function optionsExpandHandler(event) {
+  event.stopPropagation();
+  const targetElement = event.target;
+  const targetDiv = targetElement.closest('div.dataholder');
+  const { id } = targetDiv;
+  const label = targetElement.innerHTML;
+  targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
+  targetDiv.querySelector(`#${id} .options`).classList.toggle('_collapse');
+}
+
 function optionEventHandler(event) {
   const targetElement = event.currentTarget;
   const targetDiv = targetElement.closest('div.dataholder');
-  const targetCol = targetDiv.querySelector(`col[data-key="${targetElement.name}"]`);
 
-  // if (targetElement.checked) {
-  //   targetCol.classList.replace('hide', 'show');
-  // } else {
-  //   targetCol.classList.replace('show', 'hide');
-  // }
+  const { key } = targetElement.dataset;
+  if (key === 'bop' || key === 'rrc') {
+    console.log('Location option');
+    // eslint-disable-next-line no-alert
+    alert('To be implemented');
+    return;
+  }
+
+  const targetCol = targetDiv.querySelector(`col[data-key="${targetElement.name}"]`);
   targetCol.classList.toggle('hide');
 }
 
@@ -71,6 +84,9 @@ function columnEventHandler(event) {
 }
 
 function addEventListeners(target) {
+  const optionExpand = target.querySelector('div .btn');
+  optionExpand.addEventListener('click', optionsExpandHandler);
+
   const options = target.querySelectorAll('input[type="checkbox"]');
   options.forEach((obj) => { obj.addEventListener('click', optionEventHandler); });
 
@@ -79,18 +95,6 @@ function addEventListeners(target) {
 
   const columnsEye = target.querySelectorAll('thead th i[data-role="show"]');
   columnsEye.forEach((obj) => { obj.addEventListener('click', columnEyeEventHandler); });
-
-  const optionExpand = target.querySelector('div .btn');
-  optionExpand.addEventListener('click', (event) => {
-    event.stopPropagation();
-    const targetElement = event.target;
-    const targetDiv = targetElement.closest('div.dataholder');
-    const { id } = targetDiv;
-    const label = targetElement.innerHTML;
-
-    targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
-    target.querySelector(`#${id} .options`).classList.toggle('_collapse');
-  });
 }
 
 export default addEventListeners;
