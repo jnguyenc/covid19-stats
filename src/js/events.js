@@ -7,7 +7,7 @@ function optionsExpandHandler(event) {
   const { id } = targetDiv;
   const label = targetElement.innerHTML;
   targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
-  targetDiv.querySelector(`#${id} .options`).classList.toggle('_collapse');
+  targetDiv.querySelector(`#${id} .options`).classList.toggle('myCollapse');
 }
 
 function optionEventHandler(event) {
