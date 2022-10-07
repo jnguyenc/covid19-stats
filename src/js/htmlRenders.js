@@ -14,7 +14,7 @@ function renderFieldset(obj, targetId) {
 }
 
 function renderOptions(columns, targetId) {
-  const optionsButton = 'Table Options <button type="button" class="btn btn-outline-secondary">Expand</button>';
+  const optionsHeader = '<div><h4>Table Options</h4><p><a href="#">Select data to show on the table</a></p><button type="button" class="btn btn-outline-secondary">Expand</button></div>';
   const legend1 = '<legend>Show Colunms</legend>';
   const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
 
@@ -25,7 +25,7 @@ function renderOptions(columns, targetId) {
   const field2 = `<fieldset>${legend2}${renderFieldset(locationType, targetId)}</fieldset>`;
   const optionWrapper = `<div class="options myCollapse">${field1}${field2}</div>`;
 
-  return `<div>${optionsButton}${optionWrapper}</div>`;
+  return `<div class="optionsArea">${optionsHeader}${optionWrapper}</div>`;
 }
 
 function renderShowColumnButtons(columns) {
@@ -77,7 +77,10 @@ function renderTableBody(data, columns) {
       }
       row += `<td ${title} data-key="${key}">${value}</td>`;
     });
-    rows += `<tr>${row}</tr>`;
+
+    const dataLocationType = `data-location-type="${(element.contractNum !== undefined) ? 'rrc' : 'bop'}"`;
+
+    rows += `<tr ${dataLocationType}>${row}</tr>`;
   });
   body = `<tbody class="table-group-divider">${rows}</tbody>`;
 
@@ -89,8 +92,9 @@ function renderTable(data, columns, targetId) {
   // const showColumnButtons = renderShowColumnButtons(columns);
   const cols = renderTableCols(columns);
   const head = renderTableHead(columns);
+  const caption = '<caption></caption>';
   const body = renderTableBody(data, columns);
-  const table = `<table class="table table-sm table-striped">${cols}${head}${body}</table>`;
+  const table = `<table class="table table-sm table-striped">${caption}${cols}${head}${body}</table>`;
   // const tableResponsive = `<div class="table-responsive-xl">${table}</div>`;
 
   return options + table;

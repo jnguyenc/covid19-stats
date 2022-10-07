@@ -2,28 +2,36 @@ import { sortData } from './dataProcess';
 
 function optionsExpandHandler(event) {
   event.stopPropagation();
-  const targetElement = event.target;
+  let targetElement = event.target;
   const targetDiv = targetElement.closest('div.dataholder');
+  // ensure the target is the button, even when the link was clicked.
+  targetElement = targetDiv.querySelector('button');
   const { id } = targetDiv;
   const label = targetElement.innerHTML;
   targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
   targetDiv.querySelector(`#${id} .options`).classList.toggle('myCollapse');
 }
 
+function toggleRowsView(targetDiv, key) {
+  const selectedRows = targetDiv.querySelectorAll(`tr[data-location-type="${key}"]`);
+  selectedRows.forEach((row) => { row.classList.toggle('removed'); });
+  const caption = targetDiv.querySelector('table caption');
+  caption.innerHTML = 'Showing...';
+}
+function toggleColsView(targetDiv, key) {
+  const targetCol = targetDiv.querySelector(`col[data-key="${key}"]`);
+  targetCol.classList.toggle('collapsed');
+}
+
 function optionEventHandler(event) {
   const targetElement = event.currentTarget;
   const targetDiv = targetElement.closest('div.dataholder');
-
   const { key } = targetElement.dataset;
   if (key === 'bop' || key === 'rrc') {
-    console.log('Location option');
-    // eslint-disable-next-line no-alert
-    alert('To be implemented');
-    return;
+    toggleRowsView(targetDiv, key);
+  } else {
+    toggleColsView(targetDiv, key);
   }
-
-  const targetCol = targetDiv.querySelector(`col[data-key="${targetElement.name}"]`);
-  targetCol.classList.toggle('hide');
 }
 
 function columnEyeEventHandler(event) {
@@ -86,6 +94,8 @@ function columnEventHandler(event) {
 function addEventListeners(target) {
   const optionExpand = target.querySelector('div .btn');
   optionExpand.addEventListener('click', optionsExpandHandler);
+  const optionExpandLink = target.querySelector('div a');
+  optionExpandLink.addEventListener('click', optionsExpandHandler);
 
   const options = target.querySelectorAll('input[type="checkbox"]');
   options.forEach((obj) => { obj.addEventListener('click', optionEventHandler); });
