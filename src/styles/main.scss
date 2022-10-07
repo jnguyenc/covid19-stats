@@ -1,62 +1,101 @@
 $color-primary: #333;
 $color-secondary: rgb(21, 92, 207);
 $color-background: #ccc;
+$min-width: 375px;
 
 :root {
   font-size: 16px;
 }
 
-button{
-  width: 85px;
+html{
+  padding: .5em;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.removed{
+  display: none;
+}
+
+.collapsed {
+  visibility: collapse;
+}
+
+.optionsArea{
+  border-top: 1px solid $color-background;
+  border-left:none;
+  border-right: none;
+  padding: .5em 0;
+  margin-bottom: .5em;
+  
+  &>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 0 0 3;
+  height: 5em;
+  min-width: $min-width;
+
+  button{
+    align-self:flex-end;
+    width: 150px;
+  }
+ }
+}
+
+@keyframes maxHeight {
+  to {max-height: 1px;}
+  from {max-height: auto;}
 }
 
 .options {
-  margin: .5em;
+  max-height: auto;
+  min-width: $min-width;
   padding: 0.5em;
-  min-height: 30em;
   background-color: #fff;
   border: 1px solid $color-background;
-  border-radius: 5px;
-  transition: min-height .25s;
-  transition-timing-function: ease-in-out;
+  border-radius: .375rem;
   display: flex;
   flex-wrap: wrap;
+  
+  _transition: display 5s;
+  _transition-timing-function: ease-in-out;
+  _animation-name: maxHeight;
+  _animation-duration: 3s;
+
+  fieldset{
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    >div{
+      margin: .5em;
+    }
+    label{
+      margin-left: .5em;
+    }
+  }
 }
 
 /* Bootstrap has class collapse */
 .myCollapse {
-  height: 0 !important;
-  min-height: 0 !important;
-  border-radius: 0 !important;
-  border-bottom: none !important;
-  border-left-color: #fff !important;
-  border-right-color: #fff !important;
+  display: none;
+  max-height: 1px;
+  border: none;
   overflow: hidden;
-  transition: min-height .25s;
-}
-
-.options > fieldset{
-  flex-basis: 250px;
-  flex-shrink: 0;
-  flex-grow: 1;
-  >div{
-    margin: .5em;
-  }
-  label{
-    margin-left: .5em;
-  }
+  
+  _transition: max-height .25s;
+  _animation: 5s linear 3s slidein;
 }
 
 table {
-  width: 100%;
-  colgroup {
-    col {
-      &.inactive,
-      &.hide {
-        visibility: collapse;
-      }
-    }
+  caption{
+    /* experienment */
+    display: none;
   }
+  width: 100%;
+
   thead {
     position: sticky;
     top: 0px;
@@ -91,7 +130,7 @@ table {
           }
         }
         i:first-child {
-          /* working on this */
+          /* experienment */
           display: none;
         }
       }
@@ -107,6 +146,7 @@ table {
   }
 }
 
+/* experienment */
 .showColumns {
   position: sticky;
   min-height: 36px;
@@ -119,7 +159,6 @@ table {
     border-radius: 6px;
     padding: 0.125em 0.25em;
 
-    &.active,
     &.show {
       position: relative;
       top: 0;
@@ -128,8 +167,6 @@ table {
       margin: 0.125em 0.25em;
       transition: margin-left 0.25s;
     }
-
-    &.inactive,
     &.hide {
       position: absolute;
       display: inline-block;
