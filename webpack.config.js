@@ -18,11 +18,14 @@ module.exports = (env, argv) => {
     entry: './src/js/index.js',
     plugins: [
       new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
+        filename: 'css/[name].[contenthash].css',
+
       }),
       new HtmlWebpackPlugin({
         title: 'Custom template',
-        template: path.resolve(__dirname, './src/index.html'),
+        template: path.resolve(__dirname, './src/covid19_table.html'),
+        filename: 'covid19_table.html',
+
       }),
       new WebpackManifestPlugin(),
     ],
@@ -45,7 +48,7 @@ module.exports = (env, argv) => {
       ],
     },
     output: {
-      filename: '[name].[contenthash].bundle.js',
+      filename: 'js/[name].[contenthash].bundle.js',
       path: path.resolve(__dirname, mode === 'development' ? 'dev' : 'public'),
       clean: true,
     },
