@@ -34,12 +34,12 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 0 0 3;
-    min-width: $min-width;
+    _flex-grow: 0 0 3;
+    _min-width: $min-width;
 
     button {
-      align-self: flex-end;
-      width: 10rem;
+      _align-self: flex-end;
+      _width: 10rem;
     }
   }
 }
@@ -111,6 +111,14 @@ html {
 @media (min-width: 400px) {
   fieldset:first-child > div {
     max-height: 14rem;
+  }
+  .optionsArea > div:nth-child(1){
+    max-height: 5em;
+    justify-content: space-between;
+    _flex-grow: 1 1 0;
+    button{
+      max-width: 10rem;
+    }
   }
 }
 
