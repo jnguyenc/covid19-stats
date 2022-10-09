@@ -3,6 +3,18 @@ $color-secondary: rgb(21, 92, 207);
 $color-background: #ccc;
 $min-width: 450px;
 
+$xsm-width: 375px;
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width: 992px;
+$xlg-width: 1200px;
+
+$xsm-heigth: 5rem;
+$sm-height: 10rem;
+$md-height: 14rem;
+
+
+
 :root {
   font-size: 16px;
 }
@@ -34,13 +46,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    _flex-grow: 0 0 3;
-    _min-width: $min-width;
-
-    button {
-      _align-self: flex-end;
-      _width: 10rem;
-    }
   }
 }
 
@@ -69,6 +74,7 @@ html {
   _animation-duration: 3s;
 
   fieldset {
+    padding-right: .5em;
     flex-basis: $min-width;
     flex-shrink: 2 0;
     flex-grow: 1;
@@ -83,7 +89,7 @@ html {
       flex-wrap: wrap;
 
       > div {
-        min-width: 210px;
+        min-width: 215px;
       }
     }
 
@@ -94,56 +100,54 @@ html {
 
   & > :nth-child(1) {
     flex-grow: 3;
+    flex-basis: $sm-width;
   }
 
   & > :nth-child(2) {
-    flex-grow: 1;
+    flex-grow: 0;
     flex-basis: 250px;
   }
 }
 
-@media (max-width: 399px) {
-  fieldset:first-child > div {
-    max-height: none;
-  }
-}
 
-@media (min-width: 400px) {
-  fieldset:first-child > div {
-    max-height: 14rem;
-  }
+@media (min-width: $xsm-width) {
   .optionsArea > div:nth-child(1){
-    max-height: 5em;
+    max-height: $xsm-heigth;
     justify-content: space-between;
-    _flex-grow: 1 1 0;
     button{
-      max-width: 10rem;
+      align-self: flex-end;
     }
   }
 }
 
-@media (min-width: 750px) and (max-width: 799px) {
-  .options {
-    justify-content: space-between !important;
+@media (min-width: $sm-width) {
+  fieldset:first-child > div {
+    max-height: $md-height;
+  }
+}
 
+@media (min-width: $md-width) {
+  fieldset:first-child > div {
+    max-height: $sm-height;
+  }
+}
+
+
+@media (min-width: $md-width) and (max-width: $lg-width) {
+  .options1 {
+    justify-content: space-between !important;
     & > fieldset {
       flex-grow: 0 !important;
     }
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $lg-width) {
   .options > :nth-child(2) {
-    margin-left: 3rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .options > :nth-child(2) {
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   fieldset:first-child > div {
-    max-height: 10rem;
+    max-height: $sm-height;
   }
 }
 
