@@ -95,9 +95,9 @@ function renderTable(data, columns, targetId) {
   const caption = '<caption></caption>';
   const body = renderTableBody(data, columns);
   const table = `<table class="table table-sm table-striped">${caption}${cols}${head}${body}</table>`;
-  // const tableResponsive = `<div class="table-responsive-xl">${table}</div>`;
+  const tableResponsive = `<div class="x-srcoll">${table}</div>`;
 
-  return options + table;
+  return options + tableResponsive;
 }
 
 function writeTable(data, columns, domTarget = '#noID') {

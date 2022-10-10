@@ -43,6 +43,10 @@ html {
   }
 }
 
+.x-srcoll{
+  overflow-x: scroll;
+}
+
 @keyframes maxHeight {
   to {
     max-height: 1px;
