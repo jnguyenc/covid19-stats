@@ -1,19 +1,12 @@
 $color-primary: #333;
 $color-secondary: rgb(21, 92, 207);
-$color-background: #ccc;
-$min-width: 450px;
+$color-accent: #ccc;
 
 $xsm-width: 375px;
 $sm-width: 576px;
 $md-width: 768px;
 $lg-width: 992px;
 $xlg-width: 1200px;
-
-$xsm-heigth: 5rem;
-$sm-height: 10rem;
-$md-height: 14rem;
-
-
 
 :root {
   font-size: 16px;
@@ -36,16 +29,17 @@ html {
 }
 
 .optionsArea {
-  border-top: 1px solid $color-background;
-  border-left: none;
-  border-right: none;
+  border-top: 1px solid $color-accent;
   padding: 0.5em 0;
-  margin-bottom: 0.5em;
 
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  button{
+    min-width: 7rem;
   }
 }
 
@@ -59,27 +53,23 @@ html {
 }
 
 .options {
-  max-height: auto;
-  min-width: $min-width;
-  padding: 0.5em;
+  min-width: $xsm-width;
   background-color: #fff;
   border-radius: 0.375rem;
   display: flex;
   flex-wrap: wrap;
-  _border: 1px solid $color-background;
-  _justify-content: space-between;
+  _border: 1px solid $color-accent;
   _transition: display 5s;
   _transition-timing-function: ease-in-out;
   _animation-name: maxHeight;
   _animation-duration: 3s;
 
   fieldset {
-    padding-right: .5em;
-    flex-basis: $min-width;
-    flex-shrink: 2 0;
     flex-grow: 1;
+    padding: .5em;
+    box-shadow: 0em 0.3em 1em rgba(0, 0, 0, 0.1);
     > legend {
-      border-bottom: 2px solid $color-background;
+      border-bottom: 1px solid $color-accent;
     }
 
     > div {
@@ -89,7 +79,7 @@ html {
       flex-wrap: wrap;
 
       > div {
-        min-width: 215px;
+        min-width: 220px;
       }
     }
 
@@ -99,22 +89,19 @@ html {
   }
 
   & > :nth-child(1) {
-    flex-grow: 3;
-    flex-basis: $sm-width;
+    flex-basis: 912px;
   }
 
   & > :nth-child(2) {
-    flex-grow: 0;
-    flex-basis: 250px;
+    flex-basis: 220px;
   }
 }
 
-
 @media (min-width: $xsm-width) {
-  .optionsArea > div:nth-child(1){
-    max-height: $xsm-heigth;
+  .optionsArea > div:nth-child(1) {
+    max-height: 5rem;
     justify-content: space-between;
-    button{
+    button {
       align-self: flex-end;
     }
   }
@@ -122,32 +109,28 @@ html {
 
 @media (min-width: $sm-width) {
   fieldset:first-child > div {
-    max-height: $md-height;
+    max-height:14rem;
   }
 }
 
 @media (min-width: $md-width) {
   fieldset:first-child > div {
-    max-height: $sm-height;
-  }
-}
-
-
-@media (min-width: $md-width) and (max-width: $lg-width) {
-  .options1 {
-    justify-content: space-between !important;
-    & > fieldset {
-      flex-grow: 0 !important;
-    }
+    max-height: 10rem;
   }
 }
 
 @media (min-width: $lg-width) {
-  .options > :nth-child(2) {
-    margin-left: 2rem;
-  }
   fieldset:first-child > div {
-    max-height: $sm-height;
+    max-height: 8rem;
+  }
+}
+
+@media (min-width: 1160px) {
+  .options{
+    justify-content: space-between;
+    fieldset{
+      flex-grow: .25;
+    }
   }
 }
 
@@ -157,14 +140,13 @@ html {
   max-height: 1px;
   border: none;
   overflow: hidden;
-
   _transition: max-height 0.25s;
   _animation: 5s linear 3s slidein;
 }
 
 table {
   caption {
-    /* experienment */
+    /* dev */
     display: none;
   }
   width: 100%;
@@ -172,7 +154,7 @@ table {
   thead {
     position: sticky;
     top: 0px;
-    background-color: $color-background;
+    background-color: $color-accent;
     tr {
       th {
         text-align: left;
@@ -194,7 +176,7 @@ table {
         }
         i.bi {
           font-size: 1rem;
-          border: 2px solid $color-background;
+          border: 2px solid $color-accent;
           border-radius: 6px;
           padding: 0.125em;
           &:hover {
@@ -203,7 +185,7 @@ table {
           }
         }
         i:first-child {
-          /* experienment */
+          /* dev */
           display: none;
         }
       }
@@ -211,7 +193,7 @@ table {
   }
   tbody {
     tr:nth-child(even) {
-      _background-color: $color-background;
+      _background-color: $color-accent;
     }
     tr:hover {
       _border-bottom: 1px solid $color-primary;
@@ -219,7 +201,7 @@ table {
   }
 }
 
-/* experienment */
+/* dev */
 .showColumns {
   position: sticky;
   min-height: 36px;
@@ -228,7 +210,7 @@ table {
   background-color: #fff;
 
   div {
-    border: 1px solid $color-background;
+    border: 1px solid $color-accent;
     border-radius: 6px;
     padding: 0.125em 0.25em;
 
