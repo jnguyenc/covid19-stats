@@ -1,7 +1,7 @@
 $color-primary: #333;
 $color-secondary: rgb(21, 92, 207);
 $color-accent: #ccc;
-$color-shadow: rgba(0, 0, 0, 0.1);
+$color-shadow: rgba(0, 0, 0, 0.2);
 $color-background: #fff;
 
 $xsm-width: 375px;
@@ -33,7 +33,7 @@ html {
 }
 
 .x-srcoll{
-  overflow-x: auto;
+  _overflow-x: auto;
 }
 
 .optionsArea {
@@ -126,25 +126,25 @@ html {
 
 @media (min-width: $lg-width) {
   fieldset:first-child > div {
-    max-height: 8rem;
+    max-height: 7rem;
   }
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1197px) {
   .options{
     justify-content: space-between;
     fieldset{
-      flex-grow: .25;
+      flex-grow: .45;
     }
   }
 }
 
 table {
+  width: 100%;
   caption {
     /* dev */
     display: none;
   }
-  width: 100%;
 
   thead {
     position: sticky;
@@ -190,7 +190,7 @@ table {
       }
     }
   }
-  
+
   tbody {
     tr:nth-child(even) {
       _background-color: $color-accent;

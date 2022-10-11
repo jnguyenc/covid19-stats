@@ -15,8 +15,8 @@ function optionsExpandHandler(event) {
 function toggleRowsView(targetDiv, key) {
   const selectedRows = targetDiv.querySelectorAll(`tr[data-location-type="${key}"]`);
   selectedRows.forEach((row) => { row.classList.toggle('removed'); });
-  const caption = targetDiv.querySelector('table caption');
-  caption.innerHTML = 'Showing...';
+  // const caption = targetDiv.querySelector('table caption');
+  // caption.innerHTML = 'Showing...';
 }
 function toggleColsView(targetDiv, key) {
   const targetCol = targetDiv.querySelector(`col[data-key="${key}"]`);

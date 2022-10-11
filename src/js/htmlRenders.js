@@ -1,5 +1,6 @@
 import { capitalizeAll, randomString } from './utilities';
 import addEventListeners from './events';
+import locationType from './dataLocations';
 
 function renderFieldset(obj, targetId) {
   let items = '';
@@ -14,12 +15,12 @@ function renderFieldset(obj, targetId) {
 }
 
 function renderOptions(columns, targetId) {
-  const optionsHeader = '<div><h4>Table Options</h4><p><a href="#">Select data to show on the table</a></p><button type="button" class="btn btn-outline-secondary">Expand</button></div>';
-  const legend1 = '<legend>Show Colunms</legend>';
+  const optionsHeader = '<div><h4>Table Options</h4><p><a href="#">Select data to include to the table below</a></p><button type="button" class="btn btn-outline-secondary">Expand</button></div>';
+  const legend1 = '<legend>Show Data</legend>';
   const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
 
   // TODO: store locationType in an external file, like dataColumns.js to make updates easy
-  const locationType = { bop: 'BOP Facilities', rrc: 'Residential Reentry Centers' };
+  // const locationType = { bop: 'BOP Facilities', rrc: 'Residential Reentry Centers' };
 
   const legend2 = '<legend>Show Locations</legend>';
   const field2 = `<fieldset>${legend2}${renderFieldset(locationType, targetId)}</fieldset>`;
