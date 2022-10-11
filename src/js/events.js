@@ -9,7 +9,7 @@ function optionsExpandHandler(event) {
   const { id } = targetDiv;
   const label = targetElement.innerHTML;
   targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
-  targetDiv.querySelector(`#${id} .options`).classList.toggle('myCollapse');
+  targetDiv.querySelector(`#${id} .options`).classList.toggle('removed');
 }
 
 function toggleRowsView(targetDiv, key) {

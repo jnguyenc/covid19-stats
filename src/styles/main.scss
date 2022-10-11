@@ -1,12 +1,16 @@
 $color-primary: #333;
 $color-secondary: rgb(21, 92, 207);
 $color-accent: #ccc;
+$color-shadow: rgba(0, 0, 0, 0.1);
+$color-background: #fff;
 
 $xsm-width: 375px;
 $sm-width: 576px;
 $md-width: 768px;
 $lg-width: 992px;
 $xlg-width: 1200px;
+
+$border-radius: 0.375rem;
 
 :root {
   font-size: 16px;
@@ -21,30 +25,29 @@ html {
 }
 
 .removed {
-  display: none;
+  display: none !important;
 }
 
 .collapsed {
   visibility: collapse;
 }
 
+.x-srcoll{
+  overflow-x: auto;
+}
+
 .optionsArea {
   border-top: 1px solid $color-accent;
   padding: 0.5em 0;
 
-  & > div:nth-child(1) {
+  > div:nth-child(1) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
 
   button{
     min-width: 7rem;
   }
-}
-
-.x-srcoll{
-  overflow-x: scroll;
 }
 
 @keyframes maxHeight {
@@ -57,11 +60,12 @@ html {
 }
 
 .options {
-  min-width: $xsm-width;
-  background-color: #fff;
-  border-radius: 0.375rem;
+  min-width: 350px;
+  background-color: $color-background;
+  border-radius: $border-radius;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+   /* dev */
   _border: 1px solid $color-accent;
   _transition: display 5s;
   _transition-timing-function: ease-in-out;
@@ -71,7 +75,10 @@ html {
   fieldset {
     flex-grow: 1;
     padding: .5em;
-    box-shadow: 0em 0.3em 1em rgba(0, 0, 0, 0.1);
+    margin: .5em 0;
+    border-radius: $border-radius;
+    box-shadow: 0em 0.3em 1em $color-shadow;
+    
     > legend {
       border-bottom: 1px solid $color-accent;
     }
@@ -79,8 +86,7 @@ html {
     > div {
       margin: 0.5em;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      flex-flow: column wrap;
 
       > div {
         min-width: 220px;
@@ -92,19 +98,14 @@ html {
     }
   }
 
-  & > :nth-child(1) {
+  > :nth-child(1) {
     flex-basis: 912px;
-  }
-
-  & > :nth-child(2) {
-    flex-basis: 220px;
   }
 }
 
 @media (min-width: $xsm-width) {
   .optionsArea > div:nth-child(1) {
     max-height: 5rem;
-    justify-content: space-between;
     button {
       align-self: flex-end;
     }
@@ -138,16 +139,6 @@ html {
   }
 }
 
-/* Bootstrap has class collapse */
-.myCollapse {
-  display: none;
-  max-height: 1px;
-  border: none;
-  overflow: hidden;
-  _transition: max-height 0.25s;
-  _animation: 5s linear 3s slidein;
-}
-
 table {
   caption {
     /* dev */
@@ -167,9 +158,11 @@ table {
         white-space: nowrap;
         border-right: 1px solid #eee;
         cursor: pointer;
-        & > * {
+        
+        > * {
           cursor: pointer;
         }
+
         span {
           margin: 0 0.25em;
           font-size: 0.75rem;
@@ -178,6 +171,7 @@ table {
             color: $color-secondary;
           }
         }
+
         i.bi {
           font-size: 1rem;
           border: 2px solid $color-accent;
@@ -188,6 +182,7 @@ table {
             border-color: $color-secondary;
           }
         }
+
         i:first-child {
           /* dev */
           display: none;
@@ -195,6 +190,7 @@ table {
       }
     }
   }
+  
   tbody {
     tr:nth-child(even) {
       _background-color: $color-accent;

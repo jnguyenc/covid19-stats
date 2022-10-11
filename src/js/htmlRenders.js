@@ -23,7 +23,7 @@ function renderOptions(columns, targetId) {
 
   const legend2 = '<legend>Show Locations</legend>';
   const field2 = `<fieldset>${legend2}${renderFieldset(locationType, targetId)}</fieldset>`;
-  const optionWrapper = `<div class="options myCollapse">${field1}${field2}</div>`;
+  const optionWrapper = `<div class="options removed">${field1}${field2}</div>`;
 
   return `<div class="optionsArea">${optionsHeader}${optionWrapper}</div>`;
 }
