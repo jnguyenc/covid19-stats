@@ -33,7 +33,7 @@ html {
 }
 
 .x-srcoll{
-  _overflow-x: auto;
+  overflow-x: auto;
 }
 
 .optionsArea {
@@ -88,7 +88,7 @@ html {
   }
 }
 
-@media (min-width: $xsm-width) {
+@media (min-width: 420px) {
   .optionsArea > div:nth-child(1) {
     max-height: 5rem;
     button {
@@ -112,6 +112,9 @@ html {
 @media (min-width: $lg-width) {
   fieldset:first-child > div {
     max-height: 7rem;
+  }
+  .x-srcoll{
+    overflow-x:unset ;
   }
 }
 
