@@ -18,23 +18,11 @@ function renderOptions(columns, targetId) {
   const optionsHeader = '<div><h4>Table Options</h4><p><a href="#">Select data to include to the table below</a></p><button type="button" class="btn btn-outline-secondary">Expand</button></div>';
   const legend1 = '<legend>Show Data</legend>';
   const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
-
-  // TODO: store locationType in an external file, like dataColumns.js to make updates easy
-  // const locationType = { bop: 'BOP Facilities', rrc: 'Residential Reentry Centers' };
-
   const legend2 = '<legend>Show Locations</legend>';
   const field2 = `<fieldset>${legend2}${renderFieldset(locationType, targetId)}</fieldset>`;
   const optionWrapper = `<div class="options removed">${field1}${field2}</div>`;
 
   return `<div class="optionsArea">${optionsHeader}${optionWrapper}</div>`;
-}
-
-function renderShowColumnButtons(columns) {
-  let showButtons = '';
-  const columnsKeys = Object.keys(columns);
-  columnsKeys.forEach((key) => { showButtons += `<div class="hide" data-key="${key}"/><i class="bi bi-eye"></i><span>${columns[key]}</span></div>`; });
-
-  return `<div class="showColumns">${showButtons}</div>`;
 }
 
 function renderTableCols(columns) {
@@ -51,7 +39,7 @@ function renderTableHead(columns) {
   let row = '';
   const columnsKeys = Object.keys(columns);
   columnsKeys.forEach((key) => {
-    row += `<th title="Click to sort" data-key="${key}"><i data-role="show" class="bi bi-eye-slash"></i>`
+    row += `<th title="Click to sort" data-key="${key}">`
         + `<span>${columns[key]}</span><i data-role="sort"></i></th>`;
   });
   head = `<thead class="thead-dark"><tr>${row}</tr></thead>`;

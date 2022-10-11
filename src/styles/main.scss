@@ -50,27 +50,12 @@ html {
   }
 }
 
-@keyframes maxHeight {
-  to {
-    max-height: 1px;
-  }
-  from {
-    max-height: auto;
-  }
-}
-
 .options {
   min-width: 350px;
   background-color: $color-background;
   border-radius: $border-radius;
   display: flex;
   flex-flow: row wrap;
-   /* dev */
-  _border: 1px solid $color-accent;
-  _transition: display 5s;
-  _transition-timing-function: ease-in-out;
-  _animation-name: maxHeight;
-  _animation-duration: 3s;
 
   fieldset {
     flex-grow: 1;
@@ -141,10 +126,6 @@ html {
 
 table {
   width: 100%;
-  caption {
-    /* dev */
-    display: none;
-  }
 
   thead {
     position: sticky;
@@ -182,66 +163,7 @@ table {
             border-color: $color-secondary;
           }
         }
-
-        i:first-child {
-          /* dev */
-          display: none;
-        }
       }
-    }
-  }
-
-  tbody {
-    tr:nth-child(even) {
-      _background-color: $color-accent;
-    }
-    tr:hover {
-      _border-bottom: 1px solid $color-primary;
-    }
-  }
-}
-
-/* dev */
-.showColumns {
-  position: sticky;
-  min-height: 36px;
-  width: 100%;
-  top: 0;
-  background-color: #fff;
-
-  div {
-    border: 1px solid $color-accent;
-    border-radius: 6px;
-    padding: 0.125em 0.25em;
-
-    &.show {
-      position: relative;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      margin: 0.125em 0.25em;
-      transition: margin-left 0.25s;
-    }
-    &.hide {
-      position: absolute;
-      display: inline-block;
-      visibility: hidden;
-      top: 50 vh;
-      left: 50 vw;
-      margin-left: 80vw;
-      _display: none;
-    }
-
-    span {
-      margin-left: 0.5em;
-      font-size: 0.75rem;
-      font-weight: bold;
-    }
-
-    &:hover {
-      cursor: pointer;
-      border-color: $color-secondary;
-      color: $color-secondary;
     }
   }
 }
