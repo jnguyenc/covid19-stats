@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
       }),
       new HtmlWebpackPlugin({
         title: 'Custom template',
-        template: path.resolve(__dirname, './src/covid19_table.html'),
+        template: path.resolve(__dirname, './src/covid19-table.html'),
         filename: 'covid19_table.html',
 
       }),
