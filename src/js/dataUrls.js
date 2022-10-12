@@ -20,7 +20,8 @@ const dataUrlsDev = [
   'data/opslevel.json',
 ];
 
-// Change this line depend on the build for production or development
+// Comment out one of the next two lines depend on building for production or development
 const dataUrls = dataUrlsDev;
+// const dataUrls = dataUrlsProd;
 
 export default dataUrls;
