@@ -16,6 +16,7 @@ const dataColumns = {
   staffDeathAmt: 'Staff Deaths',
   inmatePositiveAmt: 'Inmates Positive',
   inmateRecoveries: 'Inmates Recovered',
+  inmateDeathAmt: 'Inmates Deaths',
 };
 
 export default dataColumns;

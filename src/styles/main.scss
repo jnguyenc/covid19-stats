@@ -24,12 +24,26 @@ html {
   visibility: hidden;
 }
 
+.show{
+  visibility: visible;
+  opacity: 1;
+}
+
 .removed {
   display: none !important;
+  height: 0 !important;
+  overflow: hidden;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.transition{
+  transition: all 3s !important;
 }
 
 .collapsed {
   visibility: collapse;
+  _display: none;
 }
 
 .x-srcoll{
@@ -42,11 +56,27 @@ html {
 
   > div:nth-child(1) {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    gap: 1em;
+
+    >div{
+      >span{
+        vertical-align: middle;
+        font-weight: bolder;
+        color: #6c757d;
+      }
+      >button{
+
+
+      }
+    }
+    
   }
 
   button{
-    min-width: 7rem;
+    min-width: 2rem;
+    font-weight: bolder;
+
   }
 }
 
@@ -56,6 +86,11 @@ html {
   border-radius: $border-radius;
   display: flex;
   flex-flow: row wrap;
+
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transition: all .5s;
 
   fieldset {
     flex-grow: 1;
@@ -84,7 +119,7 @@ html {
   }
 
   > :nth-child(1) {
-    flex-basis: 912px;
+    flex-basis: 1050px;
   }
 }
 
@@ -92,7 +127,7 @@ html {
   .optionsArea > div:nth-child(1) {
     max-height: 5rem;
     button {
-      align-self: flex-end;
+      _align-self: flex-end;
     }
   }
 }
@@ -118,7 +153,7 @@ html {
   }
 }
 
-@media (min-width: 1197px) {
+@media (min-width: 1335px) {
   .options{
     justify-content: space-between;
     fieldset{
@@ -129,6 +164,7 @@ html {
 
 table {
   width: 100%;
+  font-size: 1em;
 
   thead {
     position: sticky;
@@ -136,10 +172,11 @@ table {
     background-color: $color-accent;
     tr {
       th {
-        text-align: left;
-        min-width: 100px;
+        text-align: center;
+        vertical-align: middle;
+        max-width: 8em;
         overflow: hidden;
-        white-space: nowrap;
+        _white-space: nowrap;
         border-right: 1px solid #eee;
         cursor: pointer;
         
@@ -149,7 +186,7 @@ table {
 
         span {
           margin: 0 0.25em;
-          font-size: 0.75rem;
+          font-size: .75em;
           &:hover {
             text-decoration: underline;
             color: $color-secondary;
@@ -168,5 +205,39 @@ table {
         }
       }
     }
+  }
+}
+
+@keyframes moveUp {
+  from {line-height: 1.5em;}
+  to {line-height: 1em;}
+}
+
+.upToTop{
+  position:fixed;
+  bottom: 4rem;
+  right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.5rem;
+  font-weight:bolder;  
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(200, 200, 200, 0.3);
+  color:rgba(0, 0, 0, 0.3);
+  transition: visibility 3s, opacity 3s, box-shadow .75s, color .75s;
+  visibility: hidden;
+  opacity: 0;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.6) !important;
+    color:rgba(0, 0, 0, 0.6);
+    animation-name: moveUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease;
   }
 }

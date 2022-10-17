@@ -1,4 +1,4 @@
-import { capitalizeAll, randomString } from './utilities';
+import { capitalizeAll, randomString, fun } from './utilities';
 import addEventListeners from './events';
 import locationType from './dataLocations';
 
@@ -15,7 +15,12 @@ function renderFieldset(obj, targetId) {
 }
 
 function renderOptions(columns, targetId) {
-  const optionsHeader = '<div><h4>Table Options</h4><p><a href="#">Select data to include to the table below</a></p><button type="button" class="btn btn-outline-secondary">Expand</button></div>';
+  const optionsHeader = '<div>'
+        + '<button type="button" class="btn btn-outline-secondary btn-sm">View Options</button>'
+        + '<button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.print()">Print</button>'
+        + '<div><span>Text Size:</span> <button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="-"> - </button> '
+        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="+"> + </button></div>'
+        + '</div>';
   const legend1 = '<legend>Show Data</legend>';
   const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
   const legend2 = '<legend>Show Locations</legend>';

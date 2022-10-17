@@ -1,5 +1,24 @@
 import { sortData } from './dataProcess';
 
+function textSizeHandler(event) {
+  const lowerLimitFontSize = 8;
+  const upLimitFontSize = 25;
+  const buttonClicked = event.target;
+  const { change } = buttonClicked.dataset;
+  // console.log(change);
+  const table = document.querySelector('table');
+  const style = window.getComputedStyle(table, null).getPropertyValue('font-size');
+  const currentFontSize = parseFloat(style);
+  // console.log(currentFontSize);
+  const newFontSize = (change === '+') ? currentFontSize + 1 : currentFontSize - 1;
+
+  if (newFontSize > lowerLimitFontSize && newFontSize < upLimitFontSize) {
+    table.style.fontSize = `${newFontSize}px`;
+  } else {
+    console.log(newFontSize, 'reached limit');
+  }
+}
+
 function optionsExpandHandler(event) {
   event.stopPropagation();
   let targetElement = event.target;
@@ -8,7 +27,7 @@ function optionsExpandHandler(event) {
   targetElement = targetDiv.querySelector('button');
   const { id } = targetDiv;
   const label = targetElement.innerHTML;
-  targetElement.innerHTML = label === 'Expand' ? 'Collapse' : 'Expand';
+  targetElement.innerHTML = label === 'View Options' ? 'Hide Options' : 'View Options';
   targetDiv.querySelector(`#${id} .options`).classList.toggle('removed');
 }
 
@@ -94,8 +113,12 @@ function columnEventHandler(event) {
 function addEventListeners(target) {
   const optionExpand = target.querySelector('div .btn');
   optionExpand.addEventListener('click', optionsExpandHandler);
-  const optionExpandLink = target.querySelector('div a');
-  optionExpandLink.addEventListener('click', optionsExpandHandler);
+  // const optionExpandLink = target.querySelector('div a');
+  // optionExpandLink.addEventListener('click', optionsExpandHandler);
+  const textSizeBtns = target.querySelectorAll('div .textSize');
+  textSizeBtns.forEach((btn) => {
+    btn.addEventListener('click', textSizeHandler);
+  });
 
   const options = target.querySelectorAll('input[type="checkbox"]');
   options.forEach((obj) => { obj.addEventListener('click', optionEventHandler); });
