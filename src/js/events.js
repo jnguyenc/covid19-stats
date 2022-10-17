@@ -1,5 +1,17 @@
 import { sortData } from './dataProcess';
 
+function optionsExpandHandler(event) {
+  event.stopPropagation();
+  const targetElement = event.target;
+  const targetDiv = targetElement.closest('div.dataholder');
+  // ensure the target is the button, even when the link was clicked, no longer needed.
+  // targetElement = targetDiv.querySelector('button');
+  const { id } = targetDiv;
+  const label = targetElement.innerHTML;
+  targetElement.innerHTML = label === 'View Options' ? 'Hide Options' : 'View Options';
+  targetDiv.querySelector(`#${id} .options`).classList.toggle('removed');
+}
+
 function textSizeHandler(event) {
   const lowerLimitFontSize = 8;
   const upLimitFontSize = 25;
@@ -11,7 +23,6 @@ function textSizeHandler(event) {
   const currentFontSize = parseFloat(style);
   // console.log(currentFontSize);
   const newFontSize = (change === '+') ? currentFontSize + 1 : currentFontSize - 1;
-
   if (newFontSize > lowerLimitFontSize && newFontSize < upLimitFontSize) {
     table.style.fontSize = `${newFontSize}px`;
   } else {
@@ -19,16 +30,14 @@ function textSizeHandler(event) {
   }
 }
 
-function optionsExpandHandler(event) {
-  event.stopPropagation();
-  let targetElement = event.target;
-  const targetDiv = targetElement.closest('div.dataholder');
-  // ensure the target is the button, even when the link was clicked.
-  targetElement = targetDiv.querySelector('button');
-  const { id } = targetDiv;
-  const label = targetElement.innerHTML;
-  targetElement.innerHTML = label === 'View Options' ? 'Hide Options' : 'View Options';
-  targetDiv.querySelector(`#${id} .options`).classList.toggle('removed');
+function toggleColsView(targetDiv, key) {
+  const selectedCol = targetDiv.querySelector(`col[data-key="${key}"]`);
+  selectedCol.classList.toggle('collapsed');
+  selectedCol.classList.toggle('removed');
+  const selectedHeader = targetDiv.querySelector(`th[data-key="${key}"]`);
+  selectedHeader.classList.toggle('removed');
+  const selectedRows = targetDiv.querySelectorAll(`td[data-key="${key}"]`);
+  selectedRows.forEach((row) => { row.classList.toggle('removed'); });
 }
 
 function toggleRowsView(targetDiv, key) {
@@ -37,10 +46,12 @@ function toggleRowsView(targetDiv, key) {
   // const caption = targetDiv.querySelector('table caption');
   // caption.innerHTML = 'Showing...';
 }
-function toggleColsView(targetDiv, key) {
-  const targetCol = targetDiv.querySelector(`col[data-key="${key}"]`);
-  targetCol.classList.toggle('collapsed');
-}
+
+/**
+ * This funciton handles all click events from the checkboxes, and then calls other helper function
+ * to handles specific tasks
+ * @param {} event
+ */
 
 function optionEventHandler(event) {
   const targetElement = event.currentTarget;
@@ -51,18 +62,6 @@ function optionEventHandler(event) {
   } else {
     toggleColsView(targetDiv, key);
   }
-}
-
-function columnEyeEventHandler(event) {
-  event.stopPropagation();
-  const targetElement = event.target;
-  console.log(event.target);
-  const targetDiv = targetElement.closest('div.dataholder');
-  const targetCol = targetDiv.querySelector(`col[data-key="${targetElement.parentElement.dataset.key}"]`);
-  targetCol.classList.replace('show', 'hide');
-
-  const reShow = targetDiv.querySelector(`div.showColumns div[data-key="${targetElement.parentElement.dataset.key}"`);
-  reShow.classList.replace('hide', 'show');
 }
 
 function columnEventHandler(event) {
@@ -125,9 +124,6 @@ function addEventListeners(target) {
 
   const columns = target.querySelectorAll('thead th');
   columns.forEach((obj) => { obj.addEventListener('click', columnEventHandler); });
-
-  const columnsEye = target.querySelectorAll('thead th i[data-role="show"]');
-  columnsEye.forEach((obj) => { obj.addEventListener('click', columnEyeEventHandler); });
 }
 
 export default addEventListeners;
