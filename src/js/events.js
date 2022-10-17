@@ -17,16 +17,16 @@ function textSizeHandler(event) {
   const upLimitFontSize = 25;
   const buttonClicked = event.target;
   const { change } = buttonClicked.dataset;
-  // console.log(change);
   const table = document.querySelector('table');
   const style = window.getComputedStyle(table, null).getPropertyValue('font-size');
   const currentFontSize = parseFloat(style);
-  // console.log(currentFontSize);
   const newFontSize = (change === '+') ? currentFontSize + 1 : currentFontSize - 1;
+  const messageElement = buttonClicked.closest('div').querySelector('.fontSizeMessage');
   if (newFontSize > lowerLimitFontSize && newFontSize < upLimitFontSize) {
     table.style.fontSize = `${newFontSize}px`;
+    messageElement.innerHTML = '';
   } else {
-    console.log(newFontSize, 'reached limit');
+    messageElement.innerHTML = '(limit reached)';
   }
 }
 
@@ -52,7 +52,6 @@ function toggleRowsView(targetDiv, key) {
  * to handles specific tasks
  * @param {} event
  */
-
 function optionEventHandler(event) {
   const targetElement = event.currentTarget;
   const targetDiv = targetElement.closest('div.dataholder');
@@ -65,7 +64,7 @@ function optionEventHandler(event) {
 }
 
 function columnEventHandler(event) {
-  console.log('The event was fired from:', event.target);
+  // console.log('The event was fired from:', event.target);
   // set to currentTarget instead of target to handle events from children elements
   const targetElement = event.currentTarget;
   const targetKey = targetElement.dataset.key;
@@ -79,9 +78,6 @@ function columnEventHandler(event) {
   // remove sort from all columns
   const cols = targetTable.querySelectorAll('thead th');
   cols.forEach((col) => {
-    // _eslint-disable-next-line no-return-assign, no-param-reassign
-    // col.dataset.sortDirection = '';
-    // rewriten so eslint does not complain
     const currentCol = col;
     currentCol.dataset.sortDirection = '';
     const sortVisual = col.querySelector('i[data-role="sort"]');
@@ -112,8 +108,6 @@ function columnEventHandler(event) {
 function addEventListeners(target) {
   const optionExpand = target.querySelector('div .btn');
   optionExpand.addEventListener('click', optionsExpandHandler);
-  // const optionExpandLink = target.querySelector('div a');
-  // optionExpandLink.addEventListener('click', optionsExpandHandler);
   const textSizeBtns = target.querySelectorAll('div .textSize');
   textSizeBtns.forEach((btn) => {
     btn.addEventListener('click', textSizeHandler);

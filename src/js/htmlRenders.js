@@ -18,8 +18,11 @@ function renderOptions(columns, targetId) {
   const optionsHeader = '<div>'
         + '<button type="button" class="btn btn-outline-secondary btn-sm">View Options</button>'
         + '<button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.print()">Print</button>'
-        + '<div><span>Text Size:</span> <button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="-"> - </button> '
-        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="+"> + </button></div>'
+        + '<div><span>Text Size:</span> '
+        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="-"> - </button> '
+        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="+"> + </button> '
+        + '<span class="fontSizeMessage"></span>'
+        + '</div>'
         + '</div>';
   const legend1 = '<legend>Show Data</legend>';
   const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
