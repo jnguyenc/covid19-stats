@@ -4,7 +4,6 @@ import dataUrls from './dataUrls';
 import { mergeData } from './dataProcess';
 import dataColumns from './dataColumns';
 import { writeTable } from './htmlRenders';
-import { scrollTop } from './utilities';
 
 fetchData(dataUrls).then((allJson) => {
   const { RRC } = allJson[0];
