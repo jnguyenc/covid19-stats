@@ -4,6 +4,7 @@ import dataUrls from './dataUrls';
 import { mergeData } from './dataProcess';
 import dataColumns from './dataColumns';
 import { writeTable } from './htmlRenders';
+import { scrollTop } from './utilities';
 
 fetchData(dataUrls).then((allJson) => {
   const { RRC } = allJson[0];
@@ -35,7 +36,7 @@ fetchData(dataUrls).then((allJson) => {
 
   console.log(privateData);
 
-  // Etionf .then
+  // End of .then
 }).catch((err) => {
   console.error('There was error', err);
 });

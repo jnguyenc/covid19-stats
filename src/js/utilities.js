@@ -30,6 +30,41 @@ function fun() {
   console.log('c is:', c);
 }
 
+function scrollTop(target = '.upToTop') {
+  const upToTop = document.querySelector(target);
+  upToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.onscroll = () => {
+    const threshold = 400;
+    const { body } = document;
+    const html = document.documentElement;
+    const height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight,
+    );
+    const scrollY = Math.max(body.scrollTop, html.scrollTop);
+    const level = Math.max((scrollY / height).toFixed(2), 0.3);
+
+    // console.log(level);
+
+    const t = document.querySelector(target);
+    t.style.boxShadow = `0px 0px 5px 3px rgba(0, 0, 0, ${level})`;
+    t.style.color = `rgba(0, 0, 0, ${level})`;
+
+    if (scrollY > threshold) {
+      t.classList.add('show');
+    } else {
+      t.classList.remove('show');
+    }
+  };
+}
+
 export {
-  square, squareAll, hello, hi, fun, tagWrapper, capitalize, capitalizeAll, randomString,
+  square, squareAll, hello, hi, fun, tagWrapper,
+  capitalize, capitalizeAll, randomString, scrollTop,
 };
