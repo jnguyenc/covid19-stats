@@ -1,4 +1,4 @@
-import { capitalizeAll, randomString, fun } from './utilities';
+import { capitalizeAll, randomString } from './utilities';
 import addEventListeners from './events';
 import locationType from './dataLocations';
 
