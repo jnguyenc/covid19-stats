@@ -235,3 +235,8 @@ table {
     animation-timing-function: ease;
   }
 }
+@media print {
+  .optionsArea{
+    display: none;
+  }  
+}
