@@ -16,11 +16,11 @@ function renderFieldset(obj, targetId) {
 
 function renderOptions(columns, targetId) {
   const optionsHeader = '<div>'
-        + '<button type="button" class="btn btn-outline-secondary btn-sm">View Options</button>'
-        + '<button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.print()">Print</button>'
+        + '<button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-chevron-double-down"></i> View Options</button>'
+        + '<button type="button" class="btn btn-outline-secondary btn-sm" onclick="window.print()"><i class="bi bi-printer"></i> Print</button>'
         + '<div><span>Text Size:</span> '
-        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="-"> - </button> '
-        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="+"> + </button> '
+        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="-"><i class="bi bi-dash-lg"></i></button> '
+        + '<button type="button" class="btn btn-outline-secondary btn-sm textSize" data-change="+"><i class="bi bi-plus-lg"></i></button> '
         + '<span class="fontSizeMessage"></span>'
         + '</div>'
         + '</div>';

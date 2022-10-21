@@ -71,6 +71,9 @@ html {
   button{
     min-width: 2rem;
     font-weight: bolder;
+    &:first-child{
+      min-width: 8rem;
+    }
   }
 }
 

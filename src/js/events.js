@@ -8,7 +8,9 @@ function optionsExpandHandler(event) {
   // targetElement = targetDiv.querySelector('button');
   const { id } = targetDiv;
   const label = targetElement.innerHTML;
-  targetElement.innerHTML = label === 'View Options' ? 'Hide Options' : 'View Options';
+  const optionsClosed = '<i class="bi bi-chevron-double-down"></i> View Options';
+  const optionsExpanded = '<i class="bi bi-chevron-double-up"></i> Hide Options';
+  targetElement.innerHTML = label === optionsClosed ? optionsExpanded : optionsClosed;
   targetDiv.querySelector(`#${id} .options`).classList.toggle('removed');
 }
 
