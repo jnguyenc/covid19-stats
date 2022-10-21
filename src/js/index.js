@@ -4,6 +4,7 @@ import dataUrls from './dataUrls';
 import { mergeData } from './dataProcess';
 import dataColumns from './dataColumns';
 import { writeTable } from './htmlRenders';
+import queryProcess from './queryProcess';
 
 fetchData(dataUrls).then((allJson) => {
   const { RRC } = allJson[0];
@@ -33,6 +34,9 @@ fetchData(dataUrls).then((allJson) => {
   allLocations = [...bopLocations, ...rrcLocations];
   writeTable(allLocations, dataColumns, '#area1');
 
+  queryProcess();
+
+  // what to do with this privateDate?
   console.log(privateData);
 
   // End of .then

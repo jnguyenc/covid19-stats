@@ -122,4 +122,5 @@ function addEventListeners(target) {
   columns.forEach((obj) => { obj.addEventListener('click', columnEventHandler); });
 }
 
-export default addEventListeners;
+// export default addEventListeners;
+export { addEventListeners, toggleColsView, toggleRowsView };

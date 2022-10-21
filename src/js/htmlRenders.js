@@ -1,5 +1,5 @@
 import { capitalizeAll, randomString } from './utilities';
-import addEventListeners from './events';
+import { addEventListeners } from './events';
 import locationType from './dataLocations';
 
 function renderFieldset(obj, targetId) {
