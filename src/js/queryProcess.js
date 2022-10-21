@@ -1,6 +1,6 @@
 import dataColumns from './dataColumns';
 import locationType from './dataLocations';
-import { toggleColsView, toggleRowsView } from './events';
+import { toggleColsView, toggleRowsView } from './tableView';
 
 function queryProcess() {
   // Get query parameters
