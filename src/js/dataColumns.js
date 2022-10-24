@@ -1,7 +1,8 @@
 // Select columns to display and provide human readable names for the columns
 const dataColumns = {
   facilityCode: 'Facility Code',
-  name: 'Facility Name',
+  complexCode: 'Complex Code',
+  name: 'Name',
   city: 'City',
   state: 'State',
   zipCode: 'Zip Code',
