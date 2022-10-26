@@ -42,7 +42,24 @@ function optionEventHandler(event) {
   const targetElement = event.currentTarget;
   const targetDiv = targetElement.closest('div.dataholder');
   const { key } = targetElement.dataset;
-  if (key === 'bop' || key === 'rrc') {
+
+  if (key === 'checkAll') {
+    const targetField = targetElement.closest('fieldset');
+    const checkboxes = targetField.querySelectorAll('input:not([data-key="checkAll"])');
+    checkboxes.forEach((c) => {
+      if (c.checked !== targetElement.checked) {
+        if (c.dataset.key === 'bop' || c.dataset.key === 'rrc') {
+          toggleRowsView(targetDiv, c.dataset.key);
+          // eslint-disable-next-line no-param-reassign
+          c.checked = targetElement.checked;
+        } else {
+          toggleColsView(targetDiv, c.dataset.key);
+          // eslint-disable-next-line no-param-reassign
+          c.checked = targetElement.checked;
+        }
+      }
+    });
+  } else if (key === 'bop' || key === 'rrc') {
     toggleRowsView(targetDiv, key);
   } else {
     toggleColsView(targetDiv, key);

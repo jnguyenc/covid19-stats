@@ -11,7 +11,10 @@ function renderFieldset(obj, targetId) {
     items += `<div>${item}</div>`;
   });
 
-  return `<div>${items}</div>`;
+  const checkAllButton = `<div><input type="checkbox" id="checkAll_${targetId}" name="checkAll" data-key="checkAll" checked/>`
+  + `<label for="checkAll_${targetId}">Check/Uncheck All</label></div>`;
+
+  return `<div>${items}${checkAllButton}</div>`;
 }
 
 function renderOptions(columns, targetId) {
