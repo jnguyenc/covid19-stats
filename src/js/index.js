@@ -29,19 +29,10 @@ fetchData(dataUrls).then((allJson) => {
   bopLocations = mergeData(bopLocations, 'code', bopVaccine, 'facility');
 
   // copy staffCompleted and inmateCompleted from complex to facilities - NOT CORRECT
-  bopLocations = mergeData(bopLocations, 'complexCode', bopVaccine, 'facility');
+  // bopLocations = mergeData(bopLocations, 'complexCode', bopVaccine, 'facility');
 
   bopLocations = mergeData(bopLocations, 'code', bopTesting, 'facilityCode');
   // writeTable(bopLocations, dataColumns, '#area1');
-
-  // fix the data - correct id
-  fixField(rrcData, 'id');
-
-  // fix the data - correct contractNum
-  fixField(rrcData, 'contractNum', 0.93);
-
-  // fix the data - correct facilityName
-  fixField(rrcTesting, 'facilityName');
 
   rrcLocations = mergeData(rrcData, 'contractNum', RRC, 'contractNum');
   rrcLocations = mergeData(rrcLocations, 'contractNum', facls, 'contractNum');
