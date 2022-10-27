@@ -47,6 +47,9 @@ fetchData(dataUrls).then((allJson) => {
   // fix the data - copy code to facilityCode
   copyField(allLocations, 'code', 'facilityCode');
 
+  // fix the data - copy nameDisplay to name
+  copyField(allLocations, 'name', 'nameDisplay');
+
   writeTable(allLocations, dataColumns, '#area1');
 
   queryProcess();

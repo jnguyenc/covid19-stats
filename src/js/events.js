@@ -3,7 +3,7 @@ import { toggleColsView, toggleRowsView } from './tableView';
 
 function optionsExpandHandler(event) {
   event.stopPropagation();
-  const targetElement = event.target;
+  const targetElement = event.currentTarget;
   const targetDiv = targetElement.closest('div.dataholder');
   // ensure the target is the button, even when the link was clicked, no longer needed.
   // targetElement = targetDiv.querySelector('button');
@@ -18,7 +18,7 @@ function optionsExpandHandler(event) {
 function textSizeHandler(event) {
   const lowerLimitFontSize = 8;
   const upLimitFontSize = 25;
-  const buttonClicked = event.target;
+  const buttonClicked = event.currentTarget;
   const { change } = buttonClicked.dataset;
   const table = document.querySelector('table');
   const style = window.getComputedStyle(table, null).getPropertyValue('font-size');
