@@ -822,9 +822,9 @@
     {
       "facilityName": "VOLUNTEERS OF AMERICA CSC (BALTIMORE, MD)",
       "facilityCode": "3GS",
-      "completedTest": 18,
+      "completedTest": 16,
       "pendTest": 5,
-      "posTest": 16
+      "posTest": 14
     },
     {
       "facilityName": "JAMES RIVER RRC (NEWPORT NEWS, VA)",
@@ -850,16 +850,16 @@
     {
       "facilityName": "THE KINTOCK GROUP (PHILADELPHIA, PA)",
       "facilityCode": "3XU",
-      "completedTest": 12,
+      "completedTest": 9,
       "pendTest": 0,
-      "posTest": 12
+      "posTest": 9
     },
     {
       "facilityName": "BRONX COMMUNITY REENTRY CENTER (BRONX, NY)",
       "facilityCode": "3YK",
-      "completedTest": 4,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 3
     },
     {
       "facilityName": "VOLUNTEERS OF AMERICA (ROCHESTER, NY)",
@@ -871,9 +871,9 @@
     {
       "facilityName": "RENEWAL INC. (PITTSBURGH, PA)",
       "facilityCode": "3ZI",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "ORIANA HOUSE (CLEVELAND, OH)",
@@ -885,9 +885,9 @@
     {
       "facilityName": "RRC, SPANISH FORT, ALABAMA (SPANISH FORT, AL)",
       "facilityCode": "4BN",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 1,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "RRC, JACKSON, MISSISSIPPI (JACKSON, MS)",
@@ -899,9 +899,9 @@
     {
       "facilityName": "DISMAS CHARITIES OF LOUISVILLE (LOUISVILLE, KY)",
       "facilityCode": "4DZ",
-      "completedTest": 6,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 6
+      "posTest": 5
     },
     {
       "facilityName": "THE SALVATION ARMY (WEST PALM BEACH, FL)",
@@ -920,9 +920,9 @@
     {
       "facilityName": "DISMAS HOUSE CHARITIES, INC. (DANIA, FL)",
       "facilityCode": "4LA",
-      "completedTest": 4,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 3
     },
     {
       "facilityName": "RRC, BIRMINGHAM, ALABAMA (BIRMINGHAM, AL)",
@@ -934,23 +934,23 @@
     {
       "facilityName": "RIVERSIDE HOUSE (MIAMI, FL)",
       "facilityCode": "4MQ",
-      "completedTest": 7,
+      "completedTest": 6,
       "pendTest": 0,
-      "posTest": 7
+      "posTest": 6
     },
     {
       "facilityName": "OCALA RESIDENTL REENTRY CENTER (OCALA, FL)",
       "facilityCode": "4NS",
-      "completedTest": 3,
+      "completedTest": 2,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 2
     },
     {
       "facilityName": "SALVATION ARMY CTR,CHATTANOOGA (CHATTANOOGA, TN)",
       "facilityCode": "4PE",
-      "completedTest": 9,
+      "completedTest": 8,
       "pendTest": 0,
-      "posTest": 9
+      "posTest": 8
     },
     {
       "facilityName": "SALVATION ARMY (FT MYERS, FL)",
@@ -962,9 +962,9 @@
     {
       "facilityName": "RRC-ALSTON WILKES SOCIETY (FLORENCE, SC)",
       "facilityCode": "4U3",
-      "completedTest": 6,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 6
+      "posTest": 5
     },
     {
       "facilityName": "RRC, HATTIESBURG, MISSISSIPPI (HATTIESBURG, MS)",
@@ -983,23 +983,23 @@
     {
       "facilityName": "TALLAHASSEE RRC (TALLAHASSEE, FL)",
       "facilityCode": "4V2",
-      "completedTest": 2,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 3
     },
     {
       "facilityName": "HILLSBOROUGH CO. RRC, TAMPA,FL (TAMPA, FL)",
       "facilityCode": "4WP",
-      "completedTest": 2,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 3
     },
     {
       "facilityName": "RRC-ALSTON WILKES SOCIETY (COLUMBIA, SC)",
       "facilityCode": "4WR",
-      "completedTest": 1,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 1
+      "posTest": 3
     },
     {
       "facilityName": "BANYAN COMMUNITY HEALTH CENTER (MIAMI, FL)",
@@ -1011,16 +1011,16 @@
     {
       "facilityName": "DISMAS CHARITIES OF ORLANDO (ORLANDO, FL)",
       "facilityCode": "4Y8",
-      "completedTest": 3,
+      "completedTest": 2,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "RRC DISMAS HOUSE OF MACON (MACON, GA)",
       "facilityCode": "4ZY",
-      "completedTest": 6,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 6
+      "posTest": 5
     },
     {
       "facilityName": "KALAMAZOO PROB ENHANCEMENT PRO (BENTON HARBOR, MI)",
@@ -1039,23 +1039,23 @@
     {
       "facilityName": "VOLUNTEERS OF AMERICA OF MN (MINNEAPOLIS, MN)",
       "facilityCode": "5BH",
-      "completedTest": 7,
+      "completedTest": 4,
       "pendTest": 0,
-      "posTest": 7
+      "posTest": 4
     },
     {
       "facilityName": "TALBERT HOUSE FOR WOMEN (CINCINNATI, OH)",
       "facilityCode": "5EL",
-      "completedTest": 1,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 1
+      "posTest": 3
     },
     {
       "facilityName": "ROCK VALLEY COMMUNITY PROGRAMS (JANESVILLE, WI)",
       "facilityCode": "5GH",
-      "completedTest": 4,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 3
     },
     {
       "facilityName": "PARSONS HOUSE (MILWAUKEE, WI)",
@@ -1088,30 +1088,30 @@
     {
       "facilityName": "VOLUNTEERS OF AMERICA INC. (INDIANAPOLIS, IN)",
       "facilityCode": "5LK",
-      "completedTest": 4,
+      "completedTest": 6,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 6
     },
     {
       "facilityName": "CENTERSTONE OF ILLINOIS (MARION, IL)",
       "facilityCode": "5RN",
-      "completedTest": 3,
+      "completedTest": 2,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 2
     },
     {
       "facilityName": "SALVATION ARMY CORRECTIONAL SE (CHICAGO, IL)",
       "facilityCode": "5SA",
-      "completedTest": 14,
+      "completedTest": 12,
       "pendTest": 1,
-      "posTest": 14
+      "posTest": 12
     },
     {
       "facilityName": "FAMILY GUIDANCE CENTERS, INC. (SPRINGFIELD, IL)",
       "facilityCode": "5TJ",
-      "completedTest": 2,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 3
     },
     {
       "facilityName": "CHERRY STREET SERVICES, INC. (GRAND RAPIDS, MI)",
@@ -1144,9 +1144,9 @@
     {
       "facilityName": "REALITY HOUSE, GEO (BROWNSVILLE, TX)",
       "facilityCode": "6HN",
-      "completedTest": 10,
+      "completedTest": 7,
       "pendTest": 3,
-      "posTest": 10
+      "posTest": 7
     },
     {
       "facilityName": "VOL. OF AMER. DALLAS, TX (HUTCHINS, TX)",
@@ -1158,9 +1158,9 @@
     {
       "facilityName": "VOL OF AMER. FT WORTH, TEXAS (FORT WORTH, TX)",
       "facilityCode": "6QM",
-      "completedTest": 5,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 5
+      "posTest": 3
     },
     {
       "facilityName": "SALVATION ARMY WACO (WACO, TX)",
@@ -1172,30 +1172,30 @@
     {
       "facilityName": "CROSSPOINT SAN ANTONIO (SAN ANTONIO, TX)",
       "facilityCode": "6UC",
-      "completedTest": 3,
+      "completedTest": 2,
       "pendTest": 1,
-      "posTest": 3
+      "posTest": 2
     },
     {
       "facilityName": "COUNTY REHABILITATION CENTER (TYLER, TX)",
       "facilityCode": "6VR",
-      "completedTest": 4,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 5
     },
     {
       "facilityName": "DISMAS CORPUS CHRISTI (CORPUS CHRISTI, TX)",
       "facilityCode": "6ZB",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "LEIDEL SANCTION CENTER (HOUSTON, TX)",
       "facilityCode": "6ZE",
-      "completedTest": 7,
+      "completedTest": 6,
       "pendTest": 2,
-      "posTest": 6
+      "posTest": 5
     },
     {
       "facilityName": "DISMAS LAS CRUCES (LAS CRUCES, NM)",
@@ -1214,44 +1214,44 @@
     {
       "facilityName": "DISMAS EL PASO (EL PASO, TX)",
       "facilityCode": "6ZM",
-      "completedTest": 5,
+      "completedTest": 4,
       "pendTest": 0,
-      "posTest": 5
+      "posTest": 4
     },
     {
       "facilityName": "MID-VALLEY HOUSE (EDINBURG, TX)",
       "facilityCode": "6ZR",
-      "completedTest": 14,
+      "completedTest": 13,
       "pendTest": 1,
-      "posTest": 14
+      "posTest": 13
     },
     {
       "facilityName": "DISMAS CHARITIES, ALBUQUERQUE (ALBUQUERQUE, NM)",
       "facilityCode": "6ZV",
-      "completedTest": 15,
+      "completedTest": 13,
       "pendTest": 7,
-      "posTest": 15
+      "posTest": 13
     },
     {
       "facilityName": "DISMAS MIDLAND (MIDLAND, TX)",
       "facilityCode": "6ZX",
-      "completedTest": 9,
+      "completedTest": 11,
       "pendTest": 0,
-      "posTest": 9
+      "posTest": 11
     },
     {
       "facilityName": "DISMAS LAREDO (LAREDO, TX)",
       "facilityCode": "6ZY",
-      "completedTest": 8,
+      "completedTest": 6,
       "pendTest": 0,
-      "posTest": 7
+      "posTest": 5
     },
     {
       "facilityName": "DISMAS HOUSE OF ST. LOUIS (ST. LOUIS, MO)",
       "facilityCode": "7AW",
-      "completedTest": 5,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 5
+      "posTest": 3
     },
     {
       "facilityName": "SOUTHEAST MO BEHAVIORAL HEALTH (FARMINGTON, MO)",
@@ -1298,9 +1298,9 @@
     {
       "facilityName": "COMMUNITY EXTENDED NUCLEAR TRA (FARGO, ND)",
       "facilityCode": "7M9",
-      "completedTest": 4,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 5
     },
     {
       "facilityName": "VOLUNTEERS OF AMERICA OF MN (ROSEVILLE, MN)",
@@ -1312,23 +1312,23 @@
     {
       "facilityName": "VOAGO RESIDENTIAL REENTRY PGM (TOLEDO, OH)",
       "facilityCode": "7N0",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "DISMAS OF MANCHESTER (MANCHESTER, KY)",
       "facilityCode": "7N3",
-      "completedTest": 15,
+      "completedTest": 14,
       "pendTest": 0,
-      "posTest": 15
+      "posTest": 14
     },
     {
       "facilityName": "DISMAS CHARITIES AT OMAHA (OMAHA, NE)",
       "facilityCode": "7N6",
-      "completedTest": 11,
+      "completedTest": 10,
       "pendTest": 0,
-      "posTest": 11
+      "posTest": 10
     },
     {
       "facilityName": "CORRECTIONAL SOLUTIONS GROUP (WICHITA, KS)",
@@ -1347,9 +1347,9 @@
     {
       "facilityName": "COMMUNITY EXTENDED NUCLEAR TRA (MANDAN, ND)",
       "facilityCode": "7NQ",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "LUTHERAN SOCIAL SERVICES (EAU CLAIRE, WI)",
@@ -1361,9 +1361,9 @@
     {
       "facilityName": "GEO REENTRY INC. (LEAVENWORTH, KS)",
       "facilityCode": "7XM",
-      "completedTest": 14,
+      "completedTest": 15,
       "pendTest": 0,
-      "posTest": 14
+      "posTest": 15
     },
     {
       "facilityName": "MIRROR, INC. (WICHITA, KS)",
@@ -1389,16 +1389,16 @@
     {
       "facilityName": "PORT OF HOPE BOISE RESIDENTIAL (BOISE, ID)",
       "facilityCode": "8BD",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "CASPER REENTRY CENTER, ACC (MILLS, WY)",
       "facilityCode": "8BE",
-      "completedTest": 4,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 4
     },
     {
       "facilityName": "GREAT FALLS PRE-RELEASE CENTER (GREAT FALLS, MT)",
@@ -1417,16 +1417,16 @@
     {
       "facilityName": "ALPHA HOUSE (BILLINGS, MT)",
       "facilityCode": "8PD",
-      "completedTest": 2,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 3
     },
     {
       "facilityName": "DRC DAY REPORTING CENTER - GEO (SACRAMENTO, CA)",
       "facilityCode": "9DR",
-      "completedTest": 1,
+      "completedTest": 0,
       "pendTest": 1,
-      "posTest": 1
+      "posTest": 0
     },
     {
       "facilityName": "BSSW FLORENCE (FLORENCE, AZ)",
@@ -1445,9 +1445,9 @@
     {
       "facilityName": "CORRECTIONAL ALTERNATIVES INC. (SAN DIEGO, CA)",
       "facilityCode": "9KQ",
-      "completedTest": 6,
+      "completedTest": 7,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 5
     },
     {
       "facilityName": "GEO CARE (LAS VEGAS, NV)",
@@ -1466,9 +1466,9 @@
     {
       "facilityName": "GEO CARE INC. (SALT LAKE CITY, UT)",
       "facilityCode": "9MM",
-      "completedTest": 4,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 5
     },
     {
       "facilityName": "GEO CARE/ EL MONTE (EL MONTE, CA)",
@@ -1480,23 +1480,23 @@
     {
       "facilityName": "RRC GEO-TAYLOR STREET FACL SF (SAN FRANCISCO, CA)",
       "facilityCode": "9NL",
-      "completedTest": 7,
+      "completedTest": 6,
       "pendTest": 0,
-      "posTest": 7
+      "posTest": 6
     },
     {
       "facilityName": "RRC TURNING POINT - FRESNO (FRESNO, CA)",
       "facilityCode": "9PA",
-      "completedTest": 3,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 1
     },
     {
       "facilityName": "GARDEN GROVE CCC (GARDEN GROVE, CA)",
       "facilityCode": "9PN",
-      "completedTest": 4,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 5
     },
     {
       "facilityName": "VINEWOOD RE-ENTRY CCC (LOS ANGELES, CA)",
@@ -1508,30 +1508,30 @@
     {
       "facilityName": "RUBIDOUX RRC (RUBIDOUX, CA)",
       "facilityCode": "9SF",
-      "completedTest": 12,
+      "completedTest": 11,
       "pendTest": 0,
-      "posTest": 12
+      "posTest": 11
     },
     {
       "facilityName": "BSSW-RRC PHX (PHOENIX, AZ)",
       "facilityCode": "9TM",
-      "completedTest": 2,
+      "completedTest": 1,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 1
     },
     {
       "facilityName": "BRAWLEY RRC (BRAWLEY, CA)",
       "facilityCode": "9WD",
-      "completedTest": 2,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 2
+      "posTest": 3
     },
     {
       "facilityName": "RRC GEO REENTRY INC - OAKLAND (OAKLAND, CA)",
       "facilityCode": "9WM",
-      "completedTest": 4,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 2
     },
     {
       "facilityName": "BRIDGES REINTEGRATION CENTER (JACKSONVILLE, FL)",
@@ -1543,9 +1543,9 @@
     {
       "facilityName": "CSC-DISMAS CHARITIES, INC (ATLANTA, GA)",
       "facilityCode": "AAE",
-      "completedTest": 5,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 5
+      "posTest": 3
     },
     {
       "facilityName": "VOLUNTEERS OF AMERICA, INC (SAN JUAN, RQ)",
@@ -1564,51 +1564,58 @@
     {
       "facilityName": "DISMAS CHARITIES, INC (AUGUSTA, GA)",
       "facilityCode": "AB1",
-      "completedTest": 4,
+      "completedTest": 3,
       "pendTest": 0,
-      "posTest": 4
+      "posTest": 3
     },
     {
       "facilityName": "RRC DISMAS CHARITIES, INC (SAVANNAH, GA)",
       "facilityCode": "AB2",
-      "completedTest": 6,
-      "pendTest": 0,
-      "posTest": 6
-    },
-    {
-      "facilityName": "GEO RESIDENTIAL REENTRY CENTER (TAMPA, FL)",
-      "facilityCode": "AB5",
       "completedTest": 5,
       "pendTest": 0,
       "posTest": 5
     },
     {
-      "facilityName": "BROOKLYN HOUSE (BROOKLYN, NY)",
-      "facilityCode": "EB1",
-      "completedTest": 11,
+      "facilityName": "GEO RESIDENTIAL REENTRY CENTER (TAMPA, FL)",
+      "facilityCode": "AB5",
+      "completedTest": 4,
       "pendTest": 0,
-      "posTest": 11
+      "posTest": 4
     },
     {
-      "facilityName": "HORIZON HOUSE (ALBANY, NY)",
-      "facilityCode": "EB3",
-      "completedTest": 3,
+      "facilityName": "RRC TUPELO, MISSISSIPPI (TUPELO, MS)",
+      "facilityCode": "CA2",
+      "completedTest": 2,
       "pendTest": 0,
-      "posTest": 1
+      "posTest": 2
     },
     {
-      "facilityName": "THE KINTOCK GROUP RRC (BRIDGETON, NJ)",
-      "facilityCode": "ED1",
+      "facilityName": "SCRANTON PAVILION (SCRANTON, PA)",
+      "facilityCode": "EA1",
       "completedTest": 1,
       "pendTest": 0,
       "posTest": 1
     },
     {
+      "facilityName": "BROOKLYN HOUSE (BROOKLYN, NY)",
+      "facilityCode": "EB1",
+      "completedTest": 8,
+      "pendTest": 0,
+      "posTest": 8
+    },
+    {
+      "facilityName": "HORIZON HOUSE (ALBANY, NY)",
+      "facilityCode": "EB3",
+      "completedTest": 4,
+      "pendTest": 0,
+      "posTest": 2
+    },
+    {
       "facilityName": "KINTOCK RRC (NEWARK, NJ)",
       "facilityCode": "GA5",
-      "completedTest": 7,
+      "completedTest": 5,
       "pendTest": 0,
-      "posTest": 7
+      "posTest": 5
     },
     {
       "facilityName": "SYRACUSE PAVILION (SYRACUSE, NY)",
@@ -1627,9 +1634,9 @@
     {
       "facilityName": "HAMPSHIRE HOUSE (MANCHESTER, NH)",
       "facilityCode": "GBW",
-      "completedTest": 3,
+      "completedTest": 4,
       "pendTest": 0,
-      "posTest": 3
+      "posTest": 4
     },
     {
       "facilityName": "DRAPELICK CENTER (BLOOMFIELD, CT)",
@@ -1648,9 +1655,9 @@
     {
       "facilityName": "AVALON AUSTIN CORECIVIC (DEL VALLE, TX)",
       "facilityCode": "RA1",
-      "completedTest": 7,
+      "completedTest": 6,
       "pendTest": 1,
-      "posTest": 5
+      "posTest": 4
     },
     {
       "facilityName": "ALSTON WILKES-FAYETTEVILLE,NC (FAYETTEVILLE, NC)",
