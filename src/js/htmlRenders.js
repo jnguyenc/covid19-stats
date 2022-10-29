@@ -28,9 +28,9 @@ function renderOptions(columns, targetId) {
         + '</div>'
         + '</div>';
   const legend1 = '<legend>Show Data</legend>';
-  const field1 = `<fieldset>${legend1}${renderFieldset(columns, targetId)}</fieldset>`;
+  const field1 = `<fieldset>${legend1}${renderFieldset(columns, `${targetId}_f1`)}</fieldset>`;
   const legend2 = '<legend>Show Locations</legend>';
-  const field2 = `<fieldset>${legend2}${renderFieldset(locationType, targetId)}</fieldset>`;
+  const field2 = `<fieldset>${legend2}${renderFieldset(locationType, `${targetId}_f2`)}</fieldset>`;
   const optionWrapper = `<div class="options removed">${field1}${field2}</div>`;
 
   return `<div class="optionsArea">${optionsHeader}${optionWrapper}</div>`;
